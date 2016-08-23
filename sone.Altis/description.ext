@@ -9,7 +9,7 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 
 
 onLoadName = "SecretOne Life v3.2";
-onLoadMission = "SecretOne's Tanoa Life based on Altis Life 4.4";
+onLoadMission = "SecretOne's Altis Life";
 
 class CfgServer {
     DatabaseName = "tanoalife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
