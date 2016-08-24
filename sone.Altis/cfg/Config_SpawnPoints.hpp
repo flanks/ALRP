@@ -20,13 +20,13 @@
 */
 class CfgSpawnPoints {
     class Civilian {
-        class Kavala {
+        /* class Kavala {
             displayName = "Kavala";
             spawnMarker = "civ_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
-        };
+        }; */
 
         class Athira {
             displayName = "Athira";
@@ -68,13 +68,13 @@ class CfgSpawnPoints {
     };
 
     class Cop {
-        class kavalaHQ {
+        /* class kavalaHQ {
             displayName = "Kavala HQ";
             spawnMarker = "cop_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
-        };
+        }; */
 
         class athiraHQ {
             displayName = "Athira HQ";
@@ -109,14 +109,14 @@ class CfgSpawnPoints {
         };
     };
 
-    class Medic {
-        class kavalaH {
+     class Medic {
+        /* class kavalaH {
             displayName = "Kavala Hospital";
             spawnMarker = "medic_spawn_1";
             icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
-        };
+        }; */ 
 
         class athiraH {
             displayName = "Athira Regional";

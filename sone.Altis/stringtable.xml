@@ -152,9 +152,6 @@
         <Key ID="STR_Shops_C_Rebel">
             <Original>Tanoa Rebel Force - Shop</Original>
         </Key>
-		 <Key ID="STR_Shops_C_Outlaw">
-            <Original>Outlaw - Shop</Original>
-        </Key>
         <Key ID="STR_Shops_C_Diving">
             <Original>Steve's Diving Shop</Original>
             <Czech>Steve je potápění obchod</Czech>
@@ -178,13 +175,13 @@
             <Polish>Billy Joe Odzież</Polish>
         </Key>
         <Key ID="STR_Shops_C_BlackMarket">
-            <Original>Outlaw Clothing</Original>
+            <Original>Black Market Clothing</Original>
         </Key>
         <Key ID="STR_Shops_BlackMarket">
-            <Original>Outlaw Market</Original>
+            <Original>Black Market</Original>
         </Key>
         <Key ID="STR_Shops_W_BlackMarket">
-            <Original>Outlaw Market Weapons</Original>
+            <Original>Black Market Weapons</Original>
         </Key>
         <Key ID="STR_Shops_W_Gun">
             <Original>Billy Joe's Firearms</Original>
@@ -6872,12 +6869,6 @@
             <Italian>Licenza da Ribelle</Italian>
             <Portuguese>Treinamento Rebelde</Portuguese>
             <Polish>Trening Rebelianta</Polish>
-        </Key>
-		<Key ID="STR_License_Outlaw">
-            <Original>Outlaw Training</Original>
-        </Key>
-		<Key ID="STR_License_Rebel">
-            <Original>Rebel Training</Original>
         </Key>
         <Key ID="STR_License_RebelMember"> 
             <Original>Member - Legion Contras</Original> 

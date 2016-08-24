@@ -67,6 +67,7 @@ class Life_Client_Core {
         class adminarrestAction {}; // Admin Arrest Action
         class civRestrainAction {}; // Civilian Restrain Action
         class robShops {}; // Rob Gas Station
+		class captureOutlaw {};
 
         // Blindfold
         class blindfold {};

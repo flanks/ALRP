@@ -108,7 +108,11 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
 			{ "C_Hatchback_01_sport_F", { "", "", -1 } },
-			{ "C_SUV_01_F", { "", "", -1 } }
+			{ "C_SUV_01_F", { "", "", -1 } },
+			{ "B_Truck_01_mover_F", { "", "", -1 } },
+			{ "B_G_Offroad_01_repair_F", { "", "", -1 } }
+			
+			
         };
     };
 
@@ -558,6 +562,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } }
         };
     };
+	
+	class B_Truck_01_mover_F {
+        vItemSpace = 300;
+        licenses[] = { {"trucking"}, {""}, {""}, {""} };
+        price = 0;
+        textures[] = {};
+    };
+	
 
     class O_Truck_03_covered_F {
         vItemSpace = 300;
@@ -598,6 +610,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 
+	class B_G_Offroad_01_repair_F {
+        vItemSpace = 50;
+        licenses[] = { {"driver"}, {""}, {""}, {""} };
+        price = 0;
+        textures[] = {
+            { "Towing", "med", {
+                "textures\towing\vehicles\bergare.jpg"
+            } }
+			
+        };
+    };
+	
+	
+	
     class C_SUV_01_F {
         vItemSpace = 50;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
@@ -813,6 +839,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Ambulans", "med", {
                 "textures\medic\vehicles\med_hummingbird.jpg"
+            } },
+			{ "Towing", "med", {
+                "textures\towing\vehicles\tow-copter.jpg"
             } }
         };
     };

@@ -120,6 +120,7 @@ if (isnil "IL_Variables") then
 	IL_Supported_Vehicles_OFFROAD = ["C_Offroad_01_F", "B_G_Offroad_01_F", "B_mas_mar_Offroad_01_F"];
 	IL_Supported_Vehicles_VAN = ["C_Van_01_box_F", "B_G_Van_01_transport_F", "C_Van_01_transport_F"];
 	IL_Supported_Vehicles_HEMTT = ["B_Truck_01_covered_F", "B_Truck_01_transport_F", "B_Truck_01_box_F", "Marinir_Truck_01_box_FG", "Marinir_Truck_01_transport_FG", "Marinir_Truck_01_covered_FG", "B_mas_mar_Truck_01_covered_F", "B_mas_mar_Truck_01_transport_F"];
+	IL_Supported_Vehicles_MOVER = ["B_Truck_01_mover_F"];
 	IL_Supported_Vehicles_KAMAZ = ["I_Truck_02_transport_F", "O_Truck_02_transport_F", "I_Truck_02_covered_F", "O_Truck_02_covered_F", "caf_HLVW_open_AR", "caf_HLVW_open", "caf_HLVW_covered_ar", "caf_HLVW_covered"];
 	IL_Supported_Vehicles_TEMPEST = ["O_Truck_03_transport_F", "O_Truck_03_covered_F"];
 	IL_Supported_Vehicles_MOHAWK = ["I_Heli_Transport_02_F", "CH49_Mohawk_FG", "Marinir_CH49_Mohawk_FG"];
@@ -128,7 +129,7 @@ if (isnil "IL_Variables") then
 	IL_Supported_Vehicles_C130J = ["C130J_Cargo", "C130J"];
 	IL_Supported_Vehicles_C17 = ["globemaster_c17_altus", "globemaster_c17_701", "globemaster_c17_703", "globemaster_c17_704", "globemaster_c17_705", "globemaster_c17_dover", "globemaster_c17_edwards", "globemaster_c17_Elmendorf", "globemaster_c17", "globemaster_c17_hickam", "globemaster_c17_IAF", "globemaster_c17_March", "globemaster_c17_mcchord", "globemaster_c17_McGuire", "globemaster_c17_Mississipi", "globemaster_c17_NATO", "globemaster_c17_natoPAPA", "globemaster_c17_Qatar", "globemaster_c17_RAAF", "globemaster_c17_ZZ172_RAF", "globemaster_c17_RCAF", "globemaster_c17_Stewart", "globemaster_c17_therock", "globemaster_c17_travis", "globemaster_c17_UAE", "globemaster_c17_wright_patt"];
 	
-	IL_Supported_Vehicles_All = IL_Supported_Vehicles_C130J + IL_Supported_Vehicles_C17 + IL_Supported_Vehicles_MH9 + IL_Supported_Vehicles_MOHAWK + IL_Supported_Vehicles_KAMAZ + IL_Supported_Vehicles_TEMPEST + IL_Supported_Vehicles_HEMTT + IL_Supported_Vehicles_VAN + IL_Supported_Vehicles_OFFROAD + IL_Supported_Vehicles_CHINOOK;
+	IL_Supported_Vehicles_All = IL_Supported_Vehicles_C130J + IL_Supported_Vehicles_C17 + IL_Supported_Vehicles_MH9 + IL_Supported_Vehicles_MOHAWK + IL_Supported_Vehicles_KAMAZ + IL_Supported_Vehicles_TEMPEST + IL_Supported_Vehicles_HEMTT + IL_Supported_Vehicles_VAN + IL_Supported_Vehicles_MOVER + IL_Supported_Vehicles_OFFROAD + IL_Supported_Vehicles_CHINOOK;
 
 	// Vehicles with the ability to dropping the load on the parachute
 	IL_Para_Drop_Vehicles = IL_Supported_Vehicles_MH9 + IL_Supported_Vehicles_MOHAWK + IL_Supported_Vehicles_C130J + IL_Supported_Vehicles_C17 + IL_Supported_Vehicles_CHINOOK;
@@ -378,6 +379,17 @@ if (isnil "IL_Procedures") then
 				if ((isNil {_obj getVariable "zload"}) || (_force)) then {_obj setVariable["zload", -0.5, true];};
 				if ((isNil {_obj getVariable "load_offset"}) || (_force)) then {_obj setVariable["load_offset", 0, true];};
 			};
+		};
+		
+		if (_obj_type in IL_Supported_Vehicles_MOVER) then
+		{
+			if ((isNil {_obj getVariable "box_num"}) || (_force)) then {_obj setVariable["box_num", 0, true];};
+			if ((isNil {_obj getVariable "slots_num"}) || (_force)) then {_obj setVariable["slots_num", IL_Num_Slots_MOVER, true];};
+			if ((isNil {_obj getVariable "can_load"}) || (_force)) then {_obj setVariable["can_load", true, true];};
+			if ((isNil {_obj getVariable "can_outside"}) || (_force)) then {_obj setVariable["can_outside", IL_Can_Outside, true];};
+			if ((isNil {_obj getVariable "zload"}) || (_force)) then {_obj setVariable["zload", -1.7, true];};
+			if ((isNil {_obj getVariable "load_offset"}) || (_force)) then {_obj setVariable["load_offset", 0, true];};
+
 		};
 	};
 //	END IL_Init_Veh
@@ -1048,6 +1060,17 @@ if (isnil "IL_Procedures") then
 			_box_num = _v getVariable "box_num";
 			_slot_num = _v getVariable "slots_num";
 		};
+		if ((_obj_type in IL_Supported_Vehicles_MOVER) && (_doors == "B")) then
+		{
+			if (IL_DevMod) then
+			{
+				Player globalChat Format ["IgiLoad ""%1"". Do_load vehicle type: ""%2"" and doors: ""%3""", IL_Script_Inst, _obj_type, _doors];
+			};
+			_sdist = IL_SDistL;
+			_spoint = _v modelToWorld [0,-7 - (_v getVariable "load_offset"),0];
+			_box_num = _v getVariable "box_num";
+			_slot_num = _v getVariable "slots_num";
+		};
 		if ((_obj_type in IL_Supported_Vehicles_TEMPEST) && (_doors == "B")) then
 		{
 			if (IL_DevMod) then
@@ -1215,6 +1238,10 @@ if (isnil "IL_Procedures") then
 						if ((_obj_type in IL_Supported_Vehicles_HEMTT) && (_doors == "B")) then
 						{
 							[_v, _x, [_x_cargo_offset,-7 - _cargo_offset,_zload], [_x_cargo_offset,_counter + 0.25 - _cargo_offset,_zload], 1, _turn] call IL_Move_Attach;
+						};
+						if ((_obj_type in IL_Supported_Vehicles_MOVER) && (_doors == "B")) then
+						{
+							[_v, _x, [0,-2 - _cargo_offset,_zload], [0,_counter + 0.25 - _cargo_offset,_zload], 1, _turn] call IL_Move_Attach;
 						};
 						if ((_obj_type in IL_Supported_Vehicles_TEMPEST) && (_doors == "B")) then
 						{
@@ -1422,6 +1449,10 @@ if (isnil "IL_Procedures") then
 						if ((_obj_type in IL_Supported_Vehicles_HEMTT) && (_doors == "B")) then
 						{
 							[_v, _x, [_x_cargo_offset,_counter + 0.25 - _cargo_offset,_zload], [_x_cargo_offset,-7 - _cargo_offset,_zload], 1, _turn] call IL_Move_Attach;
+						};
+						if ((_obj_type in IL_Supported_Vehicles_MOVER) && (_doors == "B")) then
+						{
+							[_v, _x, [0, _counter + 0.25 - _cargo_offset,_zload], [0,-1 - _cargo_offset,_zload], 1, _turn] call IL_Move_Attach;
 						};
 						if ((_obj_type in IL_Supported_Vehicles_TEMPEST) && (_doors == "B")) then
 						{
@@ -2859,6 +2890,46 @@ if (_obj_main_type in IL_Supported_Vehicles_HEMTT) then
 		[_this select 0] call IL_Do_Unload;
 	},[],IL_Action_LU_Priority,false,true,"",
 	"(_target getVariable 'box_num' < 0) && ((IL_Can_Inside && (driver _target == _this)) || (((_this in (nearestObjects[ _target modelToWorld [0,-7 - (_target getVariable 'load_offset'),0], [], IL_SDistL + IL_SDistL_Heli_offset])) && (_target getVariable 'can_outside')))) && (_target getVariable 'can_load') && (abs(speed _target) <= IL_LU_Speed)"
+	];
+
+	_obj_main addAction [
+	"<t color=""#0000ff"">Enable loading from outside</t>",
+	{
+		(_this select 0) setVariable["can_outside", true, true];;
+	},[],IL_Action_S_Priority,false,true,"",
+	"((driver _target == _this) && !(_target getVariable 'can_outside') && IL_Can_Outside)"
+	];
+
+	_obj_main addAction [
+	"<t color=""#0000ff"">Disable loading from outside</t>",
+	{
+		(_this select 0) setVariable["can_outside", false, true];;
+	},[],IL_Action_S_Priority,false,true,"",
+	"((driver _target == _this) && (_target getVariable 'can_outside') && IL_Can_Outside)"
+	];
+};
+
+if (_obj_main_type in IL_Supported_Vehicles_MOVER) then
+{
+	_vsupported = true;
+	[_obj_main] call IL_Init_Veh;
+	
+	if (!license_civ_tow) exitWith {};
+
+	_obj_main addAction [
+	"<img image='IgiLoad\images\load.paa' /><t color=""#007f0e"">  Load vehicle on MOVER</t>",
+	{
+		[_this select 0, IL_Supported_Cargo_Veh_MOVER] call IL_Do_Load;
+	},[],IL_Action_LU_Priority,true,true,"",
+	"(count(nearestObjects[ _target modelToWorld [0,-7.3 - (_target getVariable 'load_offset'),0], IL_Supported_Cargo_Veh_MOVER, IL_SDistL]) > 0) && (abs(speed _target) <= IL_LU_Speed) && ((IL_Can_Inside && (driver _target == _this)) || (((_this in (nearestObjects[ _target modelToWorld [0,-7.3 - (_target getVariable 'load_offset'),0], [], IL_SDistL + IL_SDistL_Heli_offset])) && (_target getVariable 'can_outside')))) && (_target getVariable 'box_num' > _target getVariable 'slots_num') && (_target getVariable 'can_load')"
+	];
+
+	_obj_main addAction [
+	"<img image='IgiLoad\images\unload.paa' /><t color=""#ff0000"">  Unload cargo from MOVER</t>",
+	{
+		[_this select 0] call IL_Do_Unload;
+	},[],IL_Action_LU_Priority,false,true,"",
+	"(_target getVariable 'box_num' < 0) && ((IL_Can_Inside && (driver _target == _this)) || (((_this in (nearestObjects[ _target modelToWorld [0,-7.3 - (_target getVariable 'load_offset'),0], [], IL_SDistL + IL_SDistL_Heli_offset])) && (_target getVariable 'can_outside')))) && (_target getVariable 'can_load') && (abs(speed _target) <= IL_LU_Speed)"
 	];
 
 	_obj_main addAction [

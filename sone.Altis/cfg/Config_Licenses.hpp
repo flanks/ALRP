@@ -161,6 +161,14 @@ class Licenses {
         illegal = true;
         side = "civ";
     };
+	
+	class outlaw {
+        variable = "outlaw";
+        displayName = "STR_License_Outlaw";
+        price = 200000;
+        illegal = true;
+        side = "civ";
+    };
 
     //Cop Licenses
     class cAir {
