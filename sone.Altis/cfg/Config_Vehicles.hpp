@@ -33,7 +33,11 @@ class CarShops {
                  { "C_Hatchback_01_F",       { "", "", -1 } }, // Regular Hatchback 
                  { "C_Offroad_01_F",         { "", "", -1 } }, // Offroad 
                  { "C_Offroad_02_unarmed_F", { "", "", -1 } }, // MB 4WD 
-                 { "C_Hatchback_01_sport_F", { "", "", -1 } } // Hatchback Sport 
+                 { "C_Hatchback_01_sport_F", { "", "", -1 } }, // Hatchback Sport 
+				 { "O_LSV_02_unarmed_ghex_F", { "", "", -1 } },
+				 { "B_T_LSV_01_unarmed_black_F", { "", "", -1 } }
+				 
+				 
         };
     };
 
@@ -70,6 +74,8 @@ class CarShops {
             { "C_Heli_Light_01_civil_F", { "", "", -1 } },
             { "B_Heli_Light_01_F", { "", "", -1 } },
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
+			{ "I_Heli_Transport_02_F", { "", "", -1 } },
+			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },
             /*{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },*/
             { "C_Plane_Civil_01_F", { "", "", -1 } }
         };
@@ -143,6 +149,23 @@ class CarShops {
             { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", 3 } },
             { "B_SDV_01_F", { "", "", -1 } },
             { "B_G_Boat_Transport_02_F", { "", "", -1 } }
+        };
+    };
+	
+	class outlaw_car {
+        side = "civ";
+        vehicles[] = {
+            { "B_Quadbike_01_F", { "", "", -1 } },
+            { "B_G_Offroad_01_F", { "", "", -1 } },
+            { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
+            { "O_LSV_02_unarmed_black_F", { "", "", -1 } },
+			{ "O_LSV_02_unarmed_ghex_F", { "", "", -1 } },
+			{ "O_LSV_02_unarmed_arid_F", { "", "", -1 } },
+			{ "O_T_LSV_02_unarmed_F", { "", "", -1 } },
+			{ "O_T_LSV_02_unarmed_viper_F", { "", "", -1 } },
+			{ "B_T_LSV_01_unarmed_black_F", { "", "", -1 } },
+			{ "B_T_LSV_01_unarmed_olive_F", { "", "", -1 } },
+			{ "B_T_LSV_01_unarmed_sand_F", { "", "", -1 } }
         };
     };
 };
@@ -247,6 +270,20 @@ class LifeCfgVehicles {
             } }
         };
     };
+	
+	class B_Heli_Transport_03_unarmed_green_F {
+        vItemSpace = 500;
+        licenses[] = { {"pilot"}, {""}, {""}, {""} };
+        price = 10000000;
+        textures[] = { 
+			{ "Black", "civ", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
+		};
+    };
+	
 
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = 175;
@@ -682,14 +719,24 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	
 	
 	class I_Heli_Transport_02_F {
-        vItemSpace = 120;
-        licenses[] = { {""}, {""}, {"mAir"}, {""} };
-        price = 875000;
+        vItemSpace = 400;
+        licenses[] = { {"pilot"}, {""}, {"mAir"}, {""} };
+        price = 7000000;
         textures[] = {
             { "Yellow", "med", {
                 "#(argb,8,8,3)color(1,0.8,0,0.4)",
 				"#(argb,8,8,3)color(1,0.8,0,0.4)",
 				"#(argb,8,8,3)color(1,0.8,0,0.4)"
+            } },
+			{ "Ion", "civ", {
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_ion_co.paa",
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_ion_co.paa",
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_ion_co.paa"
+            } },
+            { "Dahoman", "civ", {
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
+                "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } }
         };
     };
@@ -842,11 +889,41 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 650000;
         textures[] = {};
     };
-
-    class O_LSV_02_unarmed_ghex_F {
+	
+	//-------------------
+	class O_LSV_02_unarmed_black_F {
         vItemSpace = 50;
         vFuelSpace = 80000;
-        licenses[] = { {"rebel"}, {""}, {""}, {""} };
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 200000;
+        textures[] = {};
+    };
+	class O_LSV_02_unarmed_arid_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 200000;
+        textures[] = {};
+    };
+	class O_T_LSV_02_unarmed_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 200000;
+        textures[] = {};
+    };
+	class O_LSV_02_unarmed_ghex_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 200000;
+        textures[] = {};
+    };
+	
+	class O_T_LSV_02_unarmed_viper_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
         price = 200000;
         textures[] = {};
     };
@@ -855,10 +932,26 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         vFuelSpace = 80000;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 180000;
+        price = 2000000;
         textures[] = {};
     };
-
+	
+	class B_T_LSV_01_unarmed_olive_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 2000000;
+        textures[] = {};
+    };
+	
+	class B_T_LSV_01_unarmed_sand_F {
+        vItemSpace = 50;
+        vFuelSpace = 80000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 2000000;
+        textures[] = {};
+    };
+	
     class B_G_Boat_Transport_02_F {
         vItemSpace = 50;
         vFuelSpace = 80000;
