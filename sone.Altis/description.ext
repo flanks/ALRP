@@ -7,7 +7,6 @@ disableChannels[]={{0,true,true},{1,true,true},{2,true,true}};    // Disabled te
 #include "Config_Master.hpp"
 #include "maverick\maverick_master.cpp"
 
-
 onLoadName = "SecretOne Life v3.2";
 onLoadMission = "SecretOne's Tanoa Life based on Altis Life 4.4";
 
@@ -26,6 +25,7 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	#include "scripts\statusBar.hpp"
+	#include "maverick\tuning\dialogs\titles.hpp"
 };
 
 class CfgFunctions {
