@@ -87454,7 +87454,7 @@ class Mission
 			dataType="Marker";
 			position[]={10839.269,-2.277189e-010,10680.369};
 			name="gang_area_4";
-			text="@STR_MAR_Gang_Hideout3";
+			text="@STR_MAR_Gang_Hideout4";
 			type="hd_warning";
 			colorName="ColorRed";
 			angle=2.7999957;

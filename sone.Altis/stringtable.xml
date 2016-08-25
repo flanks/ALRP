@@ -9974,6 +9974,9 @@
             <Polish>Kryjówka gangu 3</Polish>
             <Italian>Covo Gang 3</Italian>
         </Key>
+		<Key ID="STR_MAR_Gang_Hideout4">
+            <Original>Outlaw area</Original>
+        </Key>
         <Key ID="STR_MAR_Hunting_Grounds">
             <Original>Hunting Grounds</Original>
             <Czech>honební revír</Czech>
