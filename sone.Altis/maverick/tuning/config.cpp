@@ -346,9 +346,105 @@ class Maverick_Tuning
 				};
 			};
 		};
+		
+		class Truck_01_base_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			fetchDefaultFromVehicleState = 1;
+
+			class Colors
+			{
+				pool[] = {"RGB"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+			};
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 25000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 40000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+		};
+		
+		class Hatchback_01_sport_base_F
+		{
+			default[] = {{},"",0,0,{-1,-1,-1}};
+			fetchDefaultFromVehicleState = 1;
+
+			class Colors
+			{
+				pool[] = {"RGB"};
+				class RGB
+				{
+					displayText = "Custom RGB Vehicle Color";
+					price = 25000;
+					texture = "";
+				};
+			};
+			class Nitro
+			{
+				pool[] = {"Nitro1","Nitro2","Nitro3"};
+				class Nitro1
+				{
+					displayText = "Nitro Stage 1";
+					timesUseable = 1;
+					price = 15000;
+				};
+				class Nitro2
+				{
+					displayText = "Nitro Stage 2";
+					timesUseable = 2;
+					price = 25000;
+				};
+				class Nitro3
+				{
+					displayText = "Nitro Stage 3";
+					timesUseable = 3;
+					price = 40000;
+				};
+			};
+			class Underglow
+			{
+				pool[] = {"UnderglowRGB"};
+				class UnderglowRGB
+				{
+					displayText = "Custom RGB Vehicle Underglow";
+					price = 100000;
+				};
+			};
+		};
+		
 	};
 };
-
 
 
 

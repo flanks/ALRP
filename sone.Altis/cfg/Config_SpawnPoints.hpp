@@ -51,6 +51,22 @@ class CfgSpawnPoints {
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
+		
+		class losaltis {
+            displayName = "Los Altis";
+            spawnMarker = "civ_spawn_5";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "", true } };
+            level[] = { "", "", -1 };
+        };
+		
+		class zaros {
+            displayName = "Zaros";
+            spawnMarker = "civ_spawn_6";
+            icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+            licenses[] = { { "", true } };
+            level[] = { "", "", -1 };
+        };
         /* class Rebel {
             displayName = "Legion Contras Island";
             spawnMarker = "rl_2";
