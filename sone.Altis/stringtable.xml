@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="SONE Tanoa Life">
+<Project name="SONE Life">
      <Package name="News_Strings">
          <Key ID="STR_News_AddAction">
              <Original>News Station Broadcast</Original>
@@ -139,7 +139,7 @@
             <Original>Donator - Clothing Shop</Original>
         </Key>
         <Key ID="STR_Shops_C_Police">
-            <Original>Tanoa Police Shop</Original>
+            <Original>Police Shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
             <French>Boutique de la police</French>
             <Spanish>Tienda del Departamento de Policía</Spanish>
@@ -150,7 +150,7 @@
             <German>Altis Police Department-Shop</German>
         </Key>
         <Key ID="STR_Shops_C_Rebel">
-            <Original>Tanoa Rebel Force - Shop</Original>
+            <Original>Rebel Force - Shop</Original>
         </Key>
 		 <Key ID="STR_Shops_C_Outlaw">
             <Original>Outlaw - Shop</Original>
@@ -209,7 +209,7 @@
             <Polish>Sklep Kartingowy</Polish>
         </Key>
         <Key ID="STR_Shops_Market">
-            <Original>Tanoa Market</Original>
+            <Original>Market</Original>
         </Key>
         <Key ID="STR_Shops_Commodities">
             <Original>Commodities Trader</Original>
@@ -320,10 +320,10 @@
             <Polish>Skup Szkła</Polish>
         </Key>
         <Key ID="STR_Shops_Minerals">
-            <Original>Tanoa Industrial Trader</Original>
+            <Original>Industrial Trader</Original>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>Tanoa Police - Item Shop</Original>
+            <Original>Police - Item Shop</Original>
             <Czech>APD Item Shop</Czech>
             <Spanish>Equipamiento Policial</Spanish>
             <Russian></Russian>
@@ -1258,7 +1258,7 @@
     </Package>
     <Package name="Cell_Phone">
         <Key ID="STR_CELL_Title">
-            <Original>Tanoa Mobile Company</Original>
+            <Original>Mobile Company</Original>
         </Key>
         <Key ID="STR_CELL_TextToSend">
             <Original>Message To Send:</Original>
@@ -4931,7 +4931,7 @@
             <German>Dieser Container ist leer</German>
         </Key>
         <Key ID="STR_Cop_RobberDead">
-            <Original>$%1 from the Tanoa National Bank robbery was returned from the robber being killed.</Original>
+            <Original>$%1 from the National Bank robbery was returned from the robber being killed.</Original>
             <Czech>$%1 z Federálního rezervního systému loupeže byla vrácena ze lupič byl zabit.</Czech>
             <Spanish>$%1 de la Reserva Federal fue devuelto, ya que mataron al ladrón.</Spanish>
             <Russian></Russian>
@@ -7045,7 +7045,7 @@
             <Polish>Skarbiec jest już otwarty.</Polish>
         </Key>
         <Key ID="STR_ISTR_Blast_Placed">
-            <Original>A blasting charge has been placed on the Tanoa National Banks vault, You have till the clock runs out to disarm the charge!</Original>
+            <Original>A blasting charge has been placed on the National Banks vault, You have till the clock runs out to disarm the charge!</Original>
             <Czech>S rozbuškami náboj byl umístěn na federální rezervy trezoru, jste až do hodiny vyčerpá odzbrojit náboj!</Czech>
             <Spanish>Una carga explosiva ha sido puesta en la bóveda de la reserva federal, tienes hasta que se acabe el tiempo para desarmar el explosivo!</Spanish>
             <Russian></Russian>
@@ -7111,7 +7111,7 @@
             <Polish>Nie patrzysz w stronę drzwi.</Polish>
         </Key>
         <Key ID="STR_ISTR_Bolt_AlertFed">
-            <Original>THERE IS A BANK ROBBERY OF THE TANOA NATIONAL BANK!</Original>
+            <Original>THERE IS A BANK ROBBERY OF THE NATIONAL BANK!</Original>
         </Key>
         <Key ID="STR_ISTR_Bolt_AlertHouse">
             <Original>%1 was seen breaking into a house.</Original>
@@ -7816,7 +7816,7 @@
             <Polish>Napad się nie udał z niewiadomych powodów.</Polish>
         </Key>
         <Key ID="STR_NOTF_FRRobbery_Success">
-            <Original>$%1 was stolen from the robbery on the Tanoa National Bank</Original>
+            <Original>$%1 was stolen from the robbery on the National Bank</Original>
             <Czech>$%1 byl ukraden z loupeže na federální rezervy</Czech>
             <Spanish>$%1 fue robado de la reserva federal</Spanish>
             <Russian></Russian>
@@ -9328,7 +9328,7 @@
             <Italian>Processo del sale</Italian>
         </Key>
         <Key ID="STR_MAR_Altis_Corrections">
-            <Original>Tanoa Corrections</Original>
+            <Original>Corrections</Original>
         </Key>
         <Key ID="STR_MAR_Police_HQ">
             <Original>Police HQ</Original>
@@ -9474,7 +9474,7 @@
             <Polish>Bank Altis</Polish>
         </Key>
         <Key ID="STR_MAR_Car_Shop">
-            <Original>Tanoa Car Center</Original>
+            <Original>Car Center</Original>
         </Key>
         <Key ID="STR_MAR_Hospital_Clinic">
             <Original>Hospital/Clinic</Original>
@@ -9598,7 +9598,7 @@
             <Polish>Maszt nadawczy</Polish>
         </Key>
         <Key ID="STR_MAR_DMV">
-            <Original>Tanoa Licence Issuing Agency</Original>
+            <Original>Licence Issuing Agency</Original>
         </Key>
         <Key ID="STR_MAR_Delivery_Missions">
             <Original>Delivery Missions</Original>
@@ -9843,7 +9843,7 @@
             <Polish>Garaż</Polish>
         </Key>
         <Key ID="STR_MAR_Federal_Reserve">
-            <Original>Tanoa National Bank</Original>
+            <Original>National Bank</Original>
             <Czech>federální rezervní systém</Czech>
             <French>Réserve fédérale</French>
             <Spanish>Reserva Federal</Spanish>
@@ -10238,7 +10238,7 @@
             <Italian>Ripara Cassaforte</Italian>
         </Key>
         <Key ID="STR_MAR_FED_Front">
-            <Original>Tanoa National Bank - Front Entrance</Original>
+            <Original>National Bank - Front Entrance</Original>
             <Czech>Federální rezervní systém - přední vchod</Czech>
             <French>Réserve fédérale - Entrée avant</French>
             <Spanish>Reserva Federal - Entrada Principal</Spanish>
@@ -10249,7 +10249,7 @@
             <Polish>Rezerwa federalna - wejście główne</Polish>
         </Key>
         <Key ID="STR_MAR_FED_Side">
-            <Original>Tanoa National Bank - Side Entrance</Original>
+            <Original>National Bank - Side Entrance</Original>
             <Czech>Federální rezervní systém - Boční vchod</Czech>
             <French>Réserve fédérale - Entrée latérale</French>
             <Spanish>Reserva Federal - Entrada Lateral</Spanish>
@@ -10260,7 +10260,7 @@
             <Polish>Rezerwa federalna - wejście boczne</Polish>
         </Key>
         <Key ID="STR_MAR_FED_Back">
-            <Original>Tanoa National Bank - Back Entrance</Original>
+            <Original>National Bank - Back Entrance</Original>
             <Czech>Federální rezervní systém - zadní vchod</Czech>
             <French>Réserve fédérale - Entrée Derriere</French>
             <Spanish>Reserva Federal - Entrada Trasera</Spanish>
@@ -10271,7 +10271,7 @@
             <Polish>Rezerwa federalna - wejście tylne</Polish>
         </Key>
         <Key ID="STR_MAR_FED_Vault">
-            <Original>Tanoa National Bank - Vault View</Original>
+            <Original>National Bank - Vault View</Original>
             <Czech>Federální rezervní systém - Vault View</Czech>
             <French>Réserve fédérale - Voir Coffre</French>
             <Spanish>Reserva Federal - Vista a la Bóveda</Spanish>
@@ -10835,7 +10835,7 @@
             <Polish>Handel narkotykami</Polish>
         </Key>
         <Key ID="STR_Crime_23">
-            <Original>Tanoa National Bank breaking</Original>
+            <Original>National Bank breaking</Original>
             <Czech>Federální rezervní systém lámání</Czech>
             <Spanish>Entrar a la Reserva Federal</Spanish>
             <Russian></Russian>

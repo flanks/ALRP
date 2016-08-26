@@ -94,7 +94,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 				class Red
@@ -127,19 +127,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -163,7 +163,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 			};
@@ -174,19 +174,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -210,7 +210,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 			};
@@ -221,19 +221,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -257,7 +257,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 			};
@@ -268,19 +268,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -304,7 +304,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 				class Red
@@ -321,19 +321,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -358,7 +358,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 			};
@@ -369,19 +369,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow
@@ -406,7 +406,7 @@ class Maverick_Tuning
 				class RGB
 				{
 					displayText = "Custom RGB Vehicle Color";
-					price = 25000;
+					price = 200000;
 					texture = "";
 				};
 			};
@@ -417,19 +417,19 @@ class Maverick_Tuning
 				{
 					displayText = "Nitro Stage 1";
 					timesUseable = 1;
-					price = 15000;
+					price = 100000;
 				};
 				class Nitro2
 				{
 					displayText = "Nitro Stage 2";
 					timesUseable = 2;
-					price = 25000;
+					price = 200000;
 				};
 				class Nitro3
 				{
 					displayText = "Nitro Stage 3";
 					timesUseable = 3;
-					price = 40000;
+					price = 300000;
 				};
 			};
 			class Underglow

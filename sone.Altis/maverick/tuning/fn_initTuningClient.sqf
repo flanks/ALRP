@@ -45,7 +45,7 @@ scriptName "fn_initTuningClient";
 			};
 
 			// Activate nitro
-			if ((_this select 1) == 33) then {
+			if ((_this select 1) == 19) then {
 				if (!mav_tuning_nitroActive) then {
 					if ((((vehicle player) getVariable ["mav_tuning",[0,0,0,0,0]]) select 3) > 0) then {
 						mav_tuning_nitroActive = true;
