@@ -26,7 +26,7 @@ if (LIFE_SETTINGS(getNumber,"restrict_medic_weapons") isEqualTo 1) then {
 
 [] spawn life_fnc_placeablesInit; // Initiates the placeables script(s)
 
-if(license_civ_towing) exitWith {
+if(license_med_towing) exitWith {
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 };
 

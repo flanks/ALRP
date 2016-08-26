@@ -71,5 +71,10 @@ switch (playerSide) do {
         if (backpack player isEqualTo "B_Carryall_cbr") then {
             backpackContainer player setObjectTextureGlobal [0, ""];
         };
+		
+		if (uniform player isEqualTo "U_C_Scientist") then {
+                player setObjectTextureGlobal [0, "textures\towing\clothing\Tow-overall.jpg"];
+        };
+		
     };
 };

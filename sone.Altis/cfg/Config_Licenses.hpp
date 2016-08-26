@@ -202,7 +202,7 @@ class Licenses {
         displayName = "STR_License_Towing";
         price = 0;
         illegal = false;
-        side = "civ";
+        side = "med";
     };
 
     //Towing Licenses

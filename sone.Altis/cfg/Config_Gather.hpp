@@ -15,7 +15,7 @@ class CfgGather {
 
         class coconut {
             amount = 5;
-            zones[] = { "coconuts" };
+            zones[] = { "coconuts","coconuts_1","coconuts_2" };
             item = "";
         };
 

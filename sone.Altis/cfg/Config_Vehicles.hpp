@@ -110,7 +110,8 @@ class CarShops {
 			{ "C_Hatchback_01_sport_F", { "", "", -1 } },
 			{ "C_SUV_01_F", { "", "", -1 } },
 			{ "B_Truck_01_mover_F", { "", "", -1 } },
-			{ "B_G_Offroad_01_repair_F", { "", "", -1 } }
+			{ "B_G_Offroad_01_repair_F", { "", "", -1 } },
+			{ "B_Truck_01_transport_F", { "", "", -1 } },
 			
 			
         };
@@ -161,15 +162,19 @@ class CarShops {
         vehicles[] = {
             { "B_Quadbike_01_F", { "", "", -1 } },
             { "B_G_Offroad_01_F", { "", "", -1 } },
+			{ "I_C_Offroad_02_unarmed_F", { "", "", -1 } },
             { "B_Heli_Light_01_stripped_F", { "", "", -1 } },
             { "O_LSV_02_unarmed_black_F", { "", "", -1 } },
 			{ "O_LSV_02_unarmed_ghex_F", { "", "", -1 } },
 			{ "O_LSV_02_unarmed_arid_F", { "", "", -1 } },
 			{ "O_T_LSV_02_unarmed_F", { "", "", -1 } },
 			{ "O_T_LSV_02_unarmed_viper_F", { "", "", -1 } },
+			{ "O_MRAP_02_F", { "", "", -1 } }
+			/*
 			{ "B_T_LSV_01_unarmed_black_F", { "", "", -1 } },
 			{ "B_T_LSV_01_unarmed_olive_F", { "", "", -1 } },
-			{ "B_T_LSV_01_unarmed_sand_F", { "", "", -1 } }
+			{ "B_T_LSV_01_unarmed_sand_F", { "", "", -1 } } 
+			*/
         };
     };
 };
@@ -351,6 +356,14 @@ class LifeCfgVehicles {
         price = 12500;
         textures[] = { };
     };
+	
+	 class I_C_Offroad_02_unarmed_F {
+        vItemSpace = 65;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 40000;
+        textures[] = { };
+    };
+	
 
     class B_G_Offroad_01_armed_F {
         vItemSpace = 65;
@@ -389,8 +402,8 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 60;
-        licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 150000;
+        licenses[] = { {""}, {""}, {""}, {""} };
+        price = 2000000;
         textures[] = { };
     };
 
