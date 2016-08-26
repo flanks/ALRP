@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=9;
+	toggles=137;
 	class ItemIDProvider
 	{
 		nextID=8016;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4296.96,1541.3894,14221.868};
-		dir[]={0.46203092,-0.82508993,0.32521787};
-		up[]={0.67470556,0.56500232,0.47491738};
-		aside[]={0.575598,-2.3504253e-007,-0.81773978};
+		pos[]={10851.492,38.160515,10632.762};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -429,24 +429,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -461,6 +443,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -574,7 +574,7 @@ class Mission
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
 			colorName="Color4_FD_F";
-			angle=55.380508;
+			angle=55.380505;
 			id=11;
 		};
 		class Item6
@@ -1387,7 +1387,7 @@ class Mission
 			position[]={15213.218,18.475489,17327.449};
 			name="cop_air_2";
 			type="Empty";
-			angle=226.7271;
+			angle=226.72708;
 			id=102;
 		};
 		class Item84
@@ -1408,7 +1408,7 @@ class Mission
 			position[]={14696.649,17.91,16745.135};
 			name="civ_air_1";
 			type="Empty";
-			angle=308.02133;
+			angle=129.39819;
 			id=105;
 		};
 		class Item86
@@ -1417,7 +1417,7 @@ class Mission
 			position[]={14685.702,17.91,16733.902};
 			name="civ_air_1_2";
 			type="Empty";
-			angle=319.56326;
+			angle=137.04047;
 			id=106;
 		};
 		class Item87
@@ -13329,14 +13329,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={26849.723,24.091494,24593.23};
-						angles[]={0.014664836,2.9989872,0.035984326};
+						angles[]={0.014660765,2.9989817,0.035988688};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_1""],""civ"",""Carl's Airial Auto's""]];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2"",""civ_air_2_2""],""civ"",""Carl's Airial Auto's""]];";
 					};
 					id=974;
 					type="C_man_w_worker_F";
@@ -13380,7 +13380,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item27
@@ -18933,7 +18952,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={10858.608,12.945931,10648.716};
-						angles[]={6.2511969,5.9288192,6.2206011};
+						angles[]={6.251193,5.9288139,6.2205977};
 					};
 					side="Civilian";
 					flags=4;
@@ -18941,7 +18960,7 @@ class Mission
 					{
 						health=0.85821384;
 						skill=0.60000002;
-						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""outlaw_car"",civilian,[""reb_v_2"",""reb_v_1_2""],""reb"",""Outlaw Motorpool""],0,false,false,"""",'license_civ_outlaw'];";
+						init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""outlaw_car"",civilian,[""reb_v_4"",""reb_v_1_3""],""reb"",""Outlaw Motorpool""],0,false,false,"""",'license_civ_outlaw'];";
 						name="reb_1_4";
 						class Inventory
 						{
@@ -20153,14 +20172,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11609.633,26.565847,11934.961};
-						angles[]={0,1.7623043,0};
+						position[]={11609.633,26.565512,11934.961};
+						angles[]={0,1.7623113,0};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_5"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""air_g_6"";  }];   this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 						class Inventory
 						{
 							class uniform
@@ -20176,7 +20195,7 @@ class Mission
 					};
 					id=1754;
 					type="C_man_1";
-					atlOffset=2.9453373;
+					atlOffset=2.9450016;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21848,12 +21867,12 @@ class Mission
 		class Item406
 		{
 			dataType="Marker";
-			position[]={16961.373,7.4405079,13376.606};
-			name="jail_release_1";
+			position[]={16961.373,-2.0036189e-029,13376.606};
+			name="jail_release";
 			type="Empty";
-			angle=141.17859;
+			angle=141.17899;
 			id=1232;
-			atlOffset=4.6025171;
+			atlOffset=-2.8379908;
 		};
 		class Item407
 		{
@@ -26262,8 +26281,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10846.138,12.775753,10646.497};
-				angles[]={6.13234,2.7375228,0.086450629};
+				position[]={10846.138,12.776278,10646.498};
+				angles[]={6.1323361,2.737514,0.086446159};
 			};
 			side="Empty";
 			flags=4;
@@ -26272,7 +26291,30 @@ class Mission
 			};
 			id=1961;
 			type="Land_ToolTrolley_02_F";
-			atlOffset=-0.0073852539;
+			atlOffset=-0.0069999695;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item571
 		{
@@ -33105,12 +33147,12 @@ class Mission
 		class Item962
 		{
 			dataType="Marker";
-			position[]={16813.293,16.716702,13572.032};
-			name="sendtojail_6";
+			position[]={16813.293,-1.8052674e-017,13572.032};
+			name="Correctional_Facility";
 			type="Empty";
-			angle=135.37201;
+			angle=135.37199;
 			id=4199;
-			atlOffset=12.021806;
+			atlOffset=-4.3927794;
 		};
 		class Item963
 		{
@@ -33151,14 +33193,14 @@ class Mission
 		class Item966
 		{
 			dataType="Marker";
-			position[]={10858.357,12.642334,10648.821};
+			position[]={10857.754,12.681396,10648.86};
 			name="turtle_poaching_3";
 			text="Outlaw Vehicle shop";
 			type="mil_triangle";
 			colorName="ColorOrange";
 			angle=250.9536;
 			id=4310;
-			atlOffset=-0.32288742;
+			atlOffset=-0.3228941;
 		};
 		class Item967
 		{
@@ -33182,7 +33224,7 @@ class Mission
 			position[]={11619.118,26.064226,11935.389};
 			name="air_g_6";
 			type="Empty";
-			angle=82.632065;
+			angle=134.47121;
 			id=4319;
 			atlOffset=2.9453354;
 		};
@@ -117524,7 +117566,7 @@ class Mission
 			position[]={23638.078,-4.7047635e-008,18444.539};
 			name="civ_spawn_5";
 			type="Empty";
-			angle=210.08989;
+			angle=210.08987;
 			id=7996;
 			atlOffset=-3.1900001;
 		};
