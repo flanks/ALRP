@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5621.5186,428.88715,14755.002};
+		pos[]={5129.1709,719.90631,14419.16};
 		dir[]={0.79036617,-0.44447324,0.42177126};
 		up[]={0.39219132,0.89575672,0.20929085};
 		aside[]={0.47082281,-6.1781611e-007,-0.88229054};
@@ -429,24 +429,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -461,6 +443,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -574,7 +574,7 @@ class Mission
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
 			colorName="Color4_FD_F";
-			angle=55.380562;
+			angle=55.380558;
 			id=11;
 		};
 		class Item6
@@ -798,7 +798,7 @@ class Mission
 			text="Pyrgos Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=0.010999997;
+			angle=0.010999996;
 			id=35;
 			atlOffset=-3.0857143;
 		};
@@ -942,7 +942,7 @@ class Mission
 			text="@STR_MAR_Air_Service";
 			type="respawn_air";
 			colorName="Color1_FD_F";
-			angle=94.144966;
+			angle=94.144958;
 			id=52;
 		};
 		class Item41
@@ -963,7 +963,7 @@ class Mission
 			text="Zaros Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=272.40991;
+			angle=272.40988;
 			id=55;
 			atlOffset=-31.647484;
 		};
@@ -975,7 +975,7 @@ class Mission
 			text="Athira Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=359.19189;
+			angle=359.19186;
 			id=56;
 			atlOffset=-25.46665;
 		};
@@ -1387,7 +1387,7 @@ class Mission
 			position[]={15213.218,18.475489,17327.449};
 			name="cop_air_2";
 			type="Empty";
-			angle=226.72731;
+			angle=226.72729;
 			id=102;
 		};
 		class Item84
@@ -1643,7 +1643,7 @@ class Mission
 			text="@STR_MAR_Glass_Trader";
 			type="b_unknown";
 			colorName="ColorOrange";
-			angle=113.51433;
+			angle=113.51432;
 			id=130;
 			atlOffset=1.9073486e-006;
 		};
@@ -21314,7 +21314,7 @@ class Mission
 					};
 					id=7838;
 					type="C_man_p_beggar_F_afro";
-					atlOffset=3.194809e-005;
+					atlOffset=3.2186508e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21395,7 +21395,7 @@ class Mission
 					};
 					id=7842;
 					type="C_man_1";
-					atlOffset=0.052000046;
+					atlOffset=0.052000284;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -112223,7 +112223,7 @@ class Mission
 			name="coconuts_2";
 			type="Empty";
 			colorName="ColorGrey";
-			angle=0.80299979;
+			angle=0.80299973;
 			id=7792;
 			atlOffset=-13.287447;
 		};
@@ -112431,7 +112431,7 @@ class Mission
 			position[]={15178.659,17.901045,17306.535};
 			name="cop_car_4";
 			type="Empty";
-			angle=50.841549;
+			angle=50.841545;
 			id=7808;
 		};
 		class Item3765
@@ -112445,7 +112445,7 @@ class Mission
 			fillName="BDiagonal";
 			a=43;
 			b=55;
-			angle=135.19498;
+			angle=135.19496;
 			id=7811;
 			atlOffset=-17.861807;
 		};
@@ -113011,7 +113011,7 @@ class Mission
 			text="@STR_MAR_Market";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=164.01569;
+			angle=164.01567;
 			id=7828;
 		};
 		class Item3781
@@ -113028,9 +113028,9 @@ class Mission
 		class Item3782
 		{
 			dataType="Marker";
-			position[]={23624.848,3.659293e-019,18558.717};
+			position[]={23624.848,-1.0456579e-027,18558.717};
 			name="car1_1_2";
-			text="Los Altis Car Shop";
+			text="LosAltis Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
 			id=7834;
@@ -113048,13 +113048,14 @@ class Mission
 		class Item3784
 		{
 			dataType="Marker";
-			position[]={23629.088,3.1900001,18566.277};
+			position[]={23629.088,-1.1274775e-021,18566.277};
 			name="license_shop_3";
-			text="Sofia DMV";
+			text="LosAltis DMV";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=358.09689;
+			angle=358.09695;
 			id=7839;
+			atlOffset=-3.1900001;
 		};
 		class Item3785
 		{
@@ -113116,7 +113117,7 @@ class Mission
 			position[]={23658.482,3.1900001,18575.961};
 			name="car_g_6";
 			type="Empty";
-			angle=123.67718;
+			angle=123.67716;
 			id=7847;
 		};
 		class Item3788
@@ -113137,7 +113138,7 @@ class Mission
 			text="@STR_MAR_Truck_Shop";
 			type="c_car";
 			colorName="ColorBlue";
-			angle=354.94769;
+			angle=354.94766;
 			id=7851;
 		};
 		class Item3790
@@ -113146,7 +113147,7 @@ class Mission
 			position[]={23578.74,3.1900001,18344.383};
 			name="civ_truck_3";
 			type="Empty";
-			angle=221.69989;
+			angle=221.69987;
 			id=7852;
 		};
 		class Item3791
@@ -113213,7 +113214,7 @@ class Mission
 			name="atm_marker_4_3";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=149.2534;
+			angle=149.25339;
 			id=7857;
 			atlOffset=0.26730251;
 		};
@@ -113266,7 +113267,7 @@ class Mission
 			name="atm_marker_4_4";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=314.35315;
+			angle=314.35312;
 			id=7859;
 			atlOffset=0.16138983;
 		};
@@ -113395,7 +113396,7 @@ class Mission
 			};
 			id=7864;
 			type="Land_Atm_01_F";
-			atlOffset=4.7922134e-005;
+			atlOffset=4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
