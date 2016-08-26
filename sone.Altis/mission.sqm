@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=8001;
+		nextID=8013;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={23687.697,6.06672,18477.377};
-		dir[]={0.57798588,-0.46396649,0.67134899};
-		up[]={0.30272043,0.88584214,0.35162026};
-		aside[]={0.75785214,-3.8454891e-007,-0.65245914};
+		pos[]={14060.954,70.055428,18767.303};
+		dir[]={-0.2457207,-0.86160398,-0.44427085};
+		up[]={-0.41700622,0.50759667,-0.75395966};
+		aside[]={-0.87512881,1.7926504e-007,0.48402137};
 	};
 };
 binarizationWanted=0;
@@ -519,7 +519,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3917;
+		items=3925;
 		class Item0
 		{
 			dataType="Marker";
@@ -574,7 +574,7 @@ class Mission
 			text="@STR_MAR_Police_Air_HQ";
 			type="mil_box";
 			colorName="Color4_FD_F";
-			angle=55.380531;
+			angle=55.380516;
 			id=11;
 		};
 		class Item6
@@ -1387,7 +1387,7 @@ class Mission
 			position[]={15213.218,18.475489,17327.449};
 			name="cop_air_2";
 			type="Empty";
-			angle=226.72719;
+			angle=226.72713;
 			id=102;
 		};
 		class Item84
@@ -4742,6 +4742,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4749,7 +4750,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14930,6 +14930,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -14937,7 +14938,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21620,18 +21620,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23689.674,3.1915421,18479.494};
+						position[]={23689.674,3.1914389,18479.494};
 						angles[]={0,3.7179177,0};
 					};
 					side="Civilian";
 					flags=5;
 					class Attributes
 					{
-						init="this addAction [""Vehicle tuning"", {[vehicle player] spawn mav_tuning_fnc_start;}];";
 					};
 					id=7999;
 					type="C_man_w_worker_F";
-					atlOffset=0.00010323524;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -113114,7 +113112,7 @@ class Mission
 			position[]={23658.482,3.1900001,18575.961};
 			name="car_g_6";
 			type="Empty";
-			angle=123.67715;
+			angle=123.67714;
 			id=7847;
 		};
 		class Item3786
@@ -113144,7 +113142,7 @@ class Mission
 			position[]={23578.74,3.1900001,18344.383};
 			name="civ_truck_3";
 			type="Empty";
-			angle=221.69977;
+			angle=221.69975;
 			id=7852;
 		};
 		class Item3789
@@ -117602,7 +117600,7 @@ class Mission
 			position[]={23638.078,-4.7047635e-008,18444.539};
 			name="civ_spawn_5";
 			type="Empty";
-			angle=210.08998;
+			angle=210.08992;
 			id=7996;
 			atlOffset=-3.1900001;
 		};
@@ -117618,14 +117616,139 @@ class Mission
 		class Item3916
 		{
 			dataType="Marker";
-			position[]={23689.688,-7.0795607e-015,18479.578};
+			position[]={23689.879,3.1900001,18479.832};
 			name="car1_1_3";
 			text="LosAltis Car Tuning Shop";
 			type="c_car";
 			colorName="ColorPink";
-			angle=213.66399;
+			angle=213.66394;
 			id=8000;
-			atlOffset=-3.1900001;
+		};
+		class Item3917
+		{
+			dataType="Trigger";
+			position[]={23689.664,3.1899414,18479.49};
+			angle=0.5172109;
+			class Attributes
+			{
+				condition="this && (vehicle player in thisList)";
+				onActivation="title = ""<t color='#ff9900' size='1.6' shadow='1' font='PuristaBold' shadowColor='#000000' align='center'>Tuning</t> ""; extext   = ""<br />Use scrollwheel to enter the tuning area"";  hint parseText ( title + extext);  this addAction [""Vehicle tuning"", {[vehicle player] spawn mav_tuning_fnc_start;}];";
+				sizeA=5;
+				sizeB=5;
+				interuptable=1;
+				repeatable=1;
+				activationBy="ANY";
+				type="SWITCH";
+			};
+			id=8001;
+			type="EmptyDetector";
+			atlOffset=-5.865097e-005;
+		};
+		class Item3918
+		{
+			dataType="Trigger";
+			position[]={14051.423,27.373413,18699.561};
+			angle=0.5172109;
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="title = ""<t color='#ff9900' size='1.6' shadow='1' font='PuristaBold' shadowColor='#000000' align='center'>CAUTION</t> ""; extext   = ""<br />You're now entering Athira safezone SHIFT+H holster your weapon"";  hint parseText ( title + extext);";
+				sizeA=240;
+				sizeB=240;
+				interuptable=1;
+				repeatable=1;
+				activationBy="ANY";
+				type="SWITCH";
+			};
+			id=8002;
+			type="EmptyDetector";
+			atlOffset=-4.196167e-005;
+		};
+		class Item3919
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14004.128,26.222694,18736.104};
+				angles[]={0.039977662,0,0.022662206};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],10])";
+			id=8003;
+			type="Logic";
+			atlOffset=-5.9127808e-005;
+		};
+		class Item3920
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14004.135,29.843302,18737.904};
+				angles[]={0,0.57658064,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=8004;
+			type="Land_House_Big_04_F";
+			atlOffset=0.46389008;
+		};
+		class Item3921
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14002.932,26.111435,18707.027};
+				angles[]={0,0,6.2826972};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],10])";
+			id=8005;
+			type="Logic";
+			atlOffset=-8.9645386e-005;
+		};
+		class Item3922
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14002.537,32.00145,18706.504};
+				angles[]={0,3.6555603,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=8008;
+			type="Land_Hotel_01_F";
+			atlOffset=0.14418411;
+		};
+		class Item3923
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14015.024,26.239586,18728.83};
+				angles[]={0.013332055,0,6.233892};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],5])";
+			id=8011;
+			type="Logic";
+			atlOffset=0.0052528381;
+		};
+		class Item3924
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14045.007,25.299166,18758.229};
+				angles[]={0.023993526,0,6.2805333};
+			};
+			init="{ _x hideObjectGlobal true } foreach (nearestTerrainObjects [this,[],1])";
+			id=8012;
+			type="Logic";
+			atlOffset=1.1444092e-005;
 		};
 	};
 };
