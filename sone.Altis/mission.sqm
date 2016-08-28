@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14147.387,54.262737,18465.77};
-		dir[]={-0.51592481,-0.53242052,0.67124039};
-		up[]={-0.32454214,0.8463912,0.42224303};
-		aside[]={0.79294783,9.6857548e-008,0.60946727};
+		pos[]={14101.978,107.84904,18725.096};
+		dir[]={-0.6636861,-0.72022229,-0.20208706};
+		up[]={-0.68900055,0.69372624,-0.20979531};
+		aside[]={-0.29129291,-8.031202e-008,0.95665067};
 	};
 };
 binarizationWanted=0;
@@ -447,24 +447,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -479,6 +461,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -1851,7 +1851,7 @@ class Mission
 			name="civ_gar_1_3";
 			text="@STR_MAR_Garage";
 			type="o_service";
-			angle=104.47021;
+			angle=104.4702;
 			id=150;
 			atlOffset=0.322855;
 		};
@@ -28415,14 +28415,14 @@ class Mission
 		class Item686
 		{
 			dataType="Marker";
-			position[]={14062.639,1.0520879e+019,18714.293};
+			position[]={14064.732,-5.2132123e-007,18715.723};
 			name="marker_25";
-			text="Suger Trader";
+			text="Sugar Trader";
 			type="mil_dot";
 			colorName="ColorGreen";
-			angle=84.401985;
+			angle=84.401993;
 			id=2998;
-			atlOffset=1.0520879e+019;
+			atlOffset=-26.537445;
 		};
 		class Item687
 		{
@@ -116874,8 +116874,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14125.294,64.567627,18824.398};
-				angles[]={0,2.1981018,0};
+				position[]={14124.207,64.528252,18814.977};
+				angles[]={0,0.65103781,0};
 			};
 			side="Empty";
 			flags=1;
@@ -116884,7 +116884,7 @@ class Mission
 			};
 			id=7932;
 			type="Land_MultistoryBuilding_04_F";
-			atlOffset=0.56080627;
+			atlOffset=0.53941536;
 		};
 		class Item3861
 		{
@@ -119889,6 +119889,7 @@ class Mission
 			};
 			id=8173;
 			type="Land_LampStreet_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120008,6 +120009,7 @@ class Mission
 			};
 			id=8176;
 			type="Land_LampStreet_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120047,7 +120049,7 @@ class Mission
 			};
 			id=8177;
 			type="Land_LampStreet_F";
-			atlOffset=0.068681717;
+			atlOffset=0.068683624;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120127,7 +120129,7 @@ class Mission
 			};
 			id=8179;
 			type="Land_LampStreet_F";
-			atlOffset=0.071222305;
+			atlOffset=0.071224213;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120367,7 +120369,7 @@ class Mission
 			};
 			id=8185;
 			type="Land_LampStreet_F";
-			atlOffset=0.071704865;
+			atlOffset=0.071702957;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120407,7 +120409,7 @@ class Mission
 			};
 			id=8186;
 			type="Land_LampStreet_F";
-			atlOffset=0.07900238;
+			atlOffset=0.078952789;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120724,6 +120726,7 @@ class Mission
 			};
 			id=8194;
 			type="Land_LampStreet_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120841,6 +120844,7 @@ class Mission
 			};
 			id=8197;
 			type="Land_LampStreet_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120880,6 +120884,7 @@ class Mission
 			};
 			id=8198;
 			type="Land_LampStreet_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -120919,6 +120924,7 @@ class Mission
 			};
 			id=8199;
 			type="Land_LampStreet_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -121270,6 +121276,7 @@ class Mission
 			};
 			id=8208;
 			type="Land_LampStreet_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
