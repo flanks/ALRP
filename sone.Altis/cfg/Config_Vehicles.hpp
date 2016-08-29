@@ -111,7 +111,7 @@ class CarShops {
 			{ "C_SUV_01_F", { "", "", -1 } },
 			{ "B_Truck_01_mover_F", { "", "", -1 } },
 			{ "B_G_Offroad_01_repair_F", { "", "", -1 } },
-			{ "B_Truck_01_transport_F", { "", "", -1 } },
+			{ "B_Truck_01_transport_F", { "", "", -1 } }
 			
 			
         };

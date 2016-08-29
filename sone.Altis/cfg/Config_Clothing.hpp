@@ -102,7 +102,7 @@ class Clothing {
             { "B_Carryall_mcamo", "", 7500, { "", "", -1 } }, 
             { "B_Carryall_oli", "", 7500, { "", "", -1 } }, 
             { "B_Carryall_khk", "", 7500, { "", "", -1 } }, 
-            { "B_Carryall_cbr", "", 7500, { "", "", -1 } }, 
+            { "B_Carryall_cbr", "", 7500, { "", "", -1 } } 
         }; 
     }; 
 
@@ -597,7 +597,7 @@ class Clothing {
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
             { "U_Rangemaster", "Ambulance Uniform", 50, { "", "", -1 } },
-			{ "U_C_Scientist", "Towing Uniform", 50, { "", "", -1 } },
+			{ "U_C_Scientist", "Towing Uniform", 50, { "", "", -1 } }
 			
         };
         headgear[] = {
