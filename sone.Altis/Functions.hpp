@@ -123,7 +123,7 @@ class Life_Client_Core {
         class leaveGroup {};
         class setGroupLeader {};
         class setGroupPass {};
-    }
+    };
 
     class Civilian {
         file = "core\civilian";
@@ -188,7 +188,7 @@ class Life_Client_Core {
         class vehInvSearch {};
         class wantedGrab {};
         class revokeLicense {};           // Revoke Civilian License
-		class showArrestDialog {}
+		class showArrestDialog {};
 		class arrestDialog_Arrest {}; 
         class copHandheldRadar {};        // PO7 Radar
         class seizePlayerWeapon {};       // Seize Player Weapon
@@ -345,10 +345,10 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
-		class searchWreck {}
+		class searchWreck {};
         class drinkbeer {};
         class drinkmoonshine {};
-        class drinkwhiskey {};;
+        class drinkwhiskey {};
     };
 
     class Medical_System {
