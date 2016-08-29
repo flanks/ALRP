@@ -63,7 +63,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
 
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 
-                    case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format["<img image='%1' size='2'></img> Tanoa Police<br/><t align='center' color='#fffff'>%2</t>",switch ((_x getVariable "rank")) do {
+                    case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format["<img image='%1' size='2'></img> Police<br/><t align='center' color='#fffff'>%2</t>",switch ((_x getVariable "rank")) do {
                         case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
                         case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
                         case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
@@ -74,7 +74,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
                         default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
                         },_x getVariable ["realname",name _x]]};
                     
-                    case (side _x isEqualTo independent): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='2'></img> Tanoa Ambulance</t><br/><t align='center' color='#fffff'>%1</t>",_x getVariable ["realname",name _x]]};
+                    case (side _x isEqualTo independent): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='2'></img> Medic</t><br/><t align='center' color='#fffff'>%1</t>",_x getVariable ["realname",name _x]]};
                     
                     default {
                         if (!isNil {(group _x) getVariable "gang_name"}) then {
