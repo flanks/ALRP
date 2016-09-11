@@ -1,9 +1,3 @@
-/*
-File: intro.sqf
-Author: ZedBuster
-Modified: SimZor 2016.07.07
-*/
-
 _serverName = "SecretOne Life 2.0";
 _plrName = profileName;
 _sound = "introsound";
