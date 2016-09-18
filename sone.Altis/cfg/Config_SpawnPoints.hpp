@@ -52,13 +52,13 @@ class CfgSpawnPoints {
             level[] = { "", "", -1 };
         };
 		
-		class losaltis {
+		/* class losaltis {
             displayName = "Los Altis";
             spawnMarker = "civ_spawn_5";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
-        };
+        }; */
 		
 		class zaros {
             displayName = "Zaros";
