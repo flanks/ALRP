@@ -202,7 +202,7 @@ class RscEditSingle1STAR:RscEdit_infiSTAR_ss{idc=1380;};
 class RscEditSingle2STAR:RscEdit_infiSTAR_ss{idc=1381;};
 class RscEditSingle3STAR:RscEdit_infiSTAR_ss{idc=1382;};
 class RscEditSingle4STAR:RscEdit_infiSTAR_ss{idc=1383;};
-class infi_LIST1384:RscListBox_infiSTAR{idc=1384;x=-0.25;y=0.2;w=0.25;h=0.9;sizeEx=0.025;};
+class infi_LIST1384:RscListBox_infiSTAR{idc=1384;x=-0.25;y=0.2;w=0.25;h=0.9;sizeEx=0.027;};
 };
 };
 class infiSTAR_CHAT

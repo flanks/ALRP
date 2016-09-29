@@ -67,20 +67,21 @@ class CfgSpawnPoints {
             licenses[] = { { "", true } };
             level[] = { "", "", -1 };
         };
-        /* class Rebel {
-            displayName = "Legion Contras Island";
+        class Rebel {
+            displayName = "Rebel base";
             spawnMarker = "rl_2";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
         };
-        class Rebel2 {
+		
+        /*class Rebel2 {
             displayName = "Legion Contras Outpost";
             spawnMarker = "rl_1";
             icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
             licenses[] = { { "rebel", true } };
             level[] = { "", "", -1 };
-        }; */
+        };*/
     };
 
     class Cop {

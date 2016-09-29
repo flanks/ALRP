@@ -82,38 +82,87 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_TRG20_F", "", 60000, 2500 },
-            { "arifle_Katiba_F", "", 70000, 5000 },
-			{ "arifle_AK12_F", "", 200000, 5000 },
-			{ "arifle_AKM_F", "", 200000, 5000 },
-			{ "arifle_AKS_F", "", 80000, 5000 },
-			{ "arifle_CTAR_blk_F", "", 70000, 5000 },
-            { "srifle_DMR_01_F", "", 300000, -1 },
-            { "arifle_SDAR_F", "", 20000, 7500 },
-            { "hgun_Pistol_heavy_02_F", "", 9850, -1 }
+           // 5.56
+            { "arifle_Mk20C_plain_F",   "", 200000, -1 }, // MK20C
+            { "arifle_TRG21_F",         "", 200000, -1 }, // TRG
+            { "arifle_SPAR_01_khk_F",   "", 300000, -1 }, // SPAR
+			{ "arifle_AKS_F", "", 250000, 5000 },
+            { "arifle_SDAR_F",          "", 150000, -1 }, // SDAR
+			
+			// 6.5
+            { "arifle_Katiba_F","", 200000, -1 }, // Katiba	
+			{ "srifle_DMR_07_hex_F","", 300000, -1 }, // CMR-76	
+			
+			// 7.62
+            { "arifle_AKM_F","", 700000, -1 }, // AKM
+			{ "arifle_AK12_F","", 800000, -1 }, // AK12
+			{ "srifle_DMR_06_camo_F","", 850000, -1 }, // MK 14
+			{ "srifle_DMR_03_multicam_F","", 900000, -1 }, // MK1
+			{ "srifle_EBR_F","", 900000, -1 }, // MK18
+			{ "srifle_DMR_01_F","", 700000, -1 }, // Rahim
+            
+            // 9 mm
+            { "SMG_01_F",               "", 150000, -1 }, // SMG
+            { "hgun_Rook40_F",          "", 6500,   -1 }, // ROOK
+            { "hgun_PDW2000_F",         "", 120000, -1 }, // PDW
+			{ "hgun_P07_F",         	 "", 10000,   -1 }, // p07
+			
+
+            // .45 ACP
+            { "hgun_ACPC2_F",          "",  8000,   -1 }, // .45 ACP
+            { "hgun_Pistol_heavy_01_F", "", 8000,   -1 },  // .45 ACP
+			{ "hgun_Pistol_heavy_02_F", "", 8000,   -1 }  // .45 Revolver
+			
         };
         mags[] = {
-            { "30Rnd_556x45_Stanag", "", 300 },
-			{ "30Rnd_762x39_Mag_F", "", 300 },
-			{ "30Rnd_545x39_Mag_F", "", 300 },
-			{ "30Rnd_580x42_Mag_F", "", 300 },
-            { "30Rnd_65x39_caseless_green", "", 275 },
-            { "10Rnd_762x54_Mag", "", 500 },
-            { "20Rnd_556x45_UW_mag", "", 125 },
-            { "6Rnd_45ACP_Cylinder", "", 50 }
+            // 5.56
+            { "30Rnd_556x45_Stanag",    "", 1000,   -1 }, // 5.56 Stanag
+            { "20Rnd_556x45_UW_mag",    "", 1000,   -1 }, // 5.56 Underwater Stanag
+			{ "30Rnd_545x39_Mag_F",     "", 1000,   -1 }, // AKS 
+			
+			// 6.5
+            { "30Rnd_65x39_caseless_green",  "", 1000,   -1 }, // 6.5
+			{ "20Rnd_650x39_Cased_Mag_F",    "", 2000,   -1 }, // 6.5
+			
+			
+			// 7.62
+            { "20Rnd_762x51_Mag",    "", 10000,   -1 }, // MK1/MK1/MK14
+			{ "10Rnd_762x54_Mag",    "", 10000,   -1 }, // Rahim
+			{ "30Rnd_762x39_Mag_F",  "", 10000,   -1 }, // AKM/AK12
+			
+            // .45 ACP
+            { "30Rnd_45ACP_Mag_SMG_01", "", 1000,   -1 }, // .45 ACP
+            { "9Rnd_45ACP_Mag",         "", 900,    -1 }, // .45 ACP Handgun mag
+			{ "11Rnd_45ACP_Mag",         "", 900,    -1 }, // .45 ACP Handgun mag
+			{ "6Rnd_45ACP_Cylinder",         "", 900,    -1 }, // .45 ACP Handgun mag
+			
+
+            // 9 mm
+            { "16Rnd_9x21_Mag",         "", 600,    -1 }, // 9mm 16rnd
+            { "30Rnd_9x21_Mag",         "", 800,    -1 } // 9mm 30rnd
         };
         accs[] = {
-			{ "optic_ERCO_blk_F", "", 5000,   -1 }, // ERCO Apex
-            { "optic_ACO_grn", "", 3500 },
-            { "optic_Holosight", "", 3600 },
-            { "optic_Hamr", "", 7500 },
-			{ "optic_DMS", "", 10000 },
-            { "acc_flashlight", "", 1000 },
-                        // Silencers
-            { "muzzle_snds_B",   "", 2750},
-            { "muzzle_snds_L",   "", 2750},
-            { "muzzle_snds_acp", "", 2000},
-            { "muzzle_snds_H",   "", 2750}
+            // Sights
+            { "optic_ERCO_blk_F",       "", 5000,   -1 }, // ERCO Apex
+            { "optic_Arco_blk_F",       "", 5000,   -1 }, // ARCO
+            { "optic_ACO_grn",          "", 3500,   -1 }, // ACO Green
+            { "optic_Holosight",        "", 3600,   -1 }, // Holosight
+            { "optic_Hamr",             "", 7500,   -1 }, // Hamr
+			{ "optic_DMS",              "", 100000,  -1 }, // DMS
+			{ "optic_Yorris",      	    "", 5000,   -1 }, // optic_Yorris
+			{ "optic_MRD",      	    "", 5000,   -1 }, // optic_MRD
+			
+			
+            
+            // Accessories
+            { "acc_flashlight",         "", 1000,   -1 }, // Flashligt
+            
+            // Silencer
+            { "muzzle_snds_M",          "", 100000,   -1 }, // 5.56 Silencer
+			{ "muzzle_snds_H",          "", 100000,   -1 }, // 6.5 Silencer
+			{ "muzzle_snds_B",          "", 150000,   -1 }, // 7.62 Silencer
+            { "muzzle_snds_L",          "", 50000,   -1 }, // Silencer
+            { "muzzle_snds_acp",        "", 50000,   -1 }  // Silencer ACP
         };
     };
 
