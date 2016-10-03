@@ -1,4 +1,4 @@
-﻿class CarShops {
+class CarShops {
     /*
     *    ARRAY FORMAT:
     *        0: STRING (Classname)
@@ -76,7 +76,7 @@
 			{ "I_Heli_light_03_unarmed_F", { "", "", -1 } },
 			{ "I_Heli_Transport_02_F", { "", "", -1 } },
 			{ "B_Heli_Transport_03_unarmed_green_F", { "", "", -1 } },
-            /*{ "O_Heli_Light_02_unarmed_F", { "", "", -1 } },*/
+            { "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
             { "C_Plane_Civil_01_F", { "", "", -1 } }
         };
     };
@@ -142,6 +142,7 @@
         side = "cop";
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "", -1 } },
+			{ "B_T_VTOL_01_vehicle_blue_F", { "", "", -1 } },
             { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } }
         };
     };
@@ -169,7 +170,7 @@
 			{ "O_LSV_02_unarmed_arid_F", { "", "", -1 } },
 			{ "O_T_LSV_02_unarmed_F", { "", "", -1 } },
 			{ "O_T_LSV_02_unarmed_viper_F", { "", "", -1 } },
-			{ "O_MRAP_02_F", { "", "", -1 } }
+			{ "I_MRAP_03_F", { "", "", -1 } }
 			/*
 			{ "B_T_LSV_01_unarmed_black_F", { "", "", -1 } },
 			{ "B_T_LSV_01_unarmed_olive_F", { "", "", -1 } },
@@ -732,10 +733,29 @@ will modify the virtual space and the price of the vehicle, but other informatio
         };
     };
 	
+	class	B_T_VTOL_01_vehicle_blue_F {
+		vItemSpace = 200;
+        licenses[] = { {"cAir"}, {"pilot"}, {""}, {""} };
+        price = 2000000;
+        textures[] = {
+            { "Black", "cop", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+				"#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } },
+			
+			{ "Black", "civ", {
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+                "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
+				"#(argb,8,8,3)color(0.05,0.05,0.05,1)"
+            } }
+        };		
+	};
+	
 	class	I_MRAP_03_F {
 		vItemSpace = 90;
         licenses[] = { {"driver"}, {""}, {""}, {""} };
-        price = 575000;
+        price = 2000000;
         textures[] = {
             { "Rebel", "reb", {
                "textures\rebel\vehicles\EQT_REB_STRI.jpg"
@@ -974,7 +994,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 50;
         vFuelSpace = 80000;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 2000000;
+        price = 10000;
         textures[] = {};
     };
 	
