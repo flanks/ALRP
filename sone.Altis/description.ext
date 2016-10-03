@@ -41,7 +41,12 @@ class CfgSounds {
         sound[] = {"\sounds\polissiren.ogg", 1.0, 1};
         titles[] = {};
     };
-
+	
+	 class yelp {
+        name = "yelp";
+        sound[] = {"\sounds\yelp.ogg", 1.0, 1};
+        titles[] = {};
+    };
 
     class sms{
         name = "sms";

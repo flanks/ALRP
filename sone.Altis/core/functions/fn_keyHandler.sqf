@@ -132,6 +132,28 @@ switch (_code) do {
         };
     };
 
+	case 41: 
+    {       
+    if(isPlayer cursorTarget) then 
+        {           
+        if(cursorTarget isKindOf "Man") then 
+            {               
+            hint format["%1",name cursorTarget];            
+            } 
+            else 
+            {               
+            hint format["%1",name (driver cursorTarget)];           
+            };      
+        } 
+        else 
+        {           
+        if(cursorTarget isKindOf "Car" OR cursorTarget isKindOf "Air" OR cursorTarget isKindOf "Ship") then 
+            {           
+            hint format["%1",getText(configFile >> "CfgVehicles" >> (typeOf cursorTarget) >> "displayName")];           
+            };      
+        };  
+    };
+	
     // R Key
     case 19: {
         if (_shift) then {_handled = true;};
@@ -246,6 +268,19 @@ switch (_code) do {
         };
     };
 
+	case 76: {
+	
+        if (playerSide in [west,independent] && {vehicle player != player} && {!life_yelp_active} && {((driver vehicle player) == player)}) then {
+            [] spawn {
+                life_yelp_active = true;
+                sleep 4.0;
+                life_yelp_active = false;
+            };
+		};	
+		
+	};	
+			
+	
     //F Key
     case 33: {
         if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
@@ -430,7 +465,7 @@ switch (_code) do {
 				// _handled = true;
 		// };
 	
-	case 2:
+	/* case 2:
 	{
 		if (_shift) then 
 				{
@@ -473,7 +508,14 @@ switch (_code) do {
 		{
 			[radio_shoutMessage_3, radio_textImg_3] call life_fnc_shoutSpeech;
 		};
-	};
+	}; */
+	
+	//Disable Tactical View
+    if (_code in (actionKeys "TacticalView")) then
+        {
+        hint "Command mode disabled!" ;
+        _handled = true;
+    };
 
 	//Hand GESTURES 3-6
 	case 79:

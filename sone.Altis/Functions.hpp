@@ -194,6 +194,7 @@ class Life_Client_Core {
         class seizePlayerWeapon {};       // Seize Player Weapon
         class seizePlayerWeaponAction {}; // Seize Player Weapon (Action)
         class breathalyzer {};            // Breathalyzer
+		class copYelp {};
     };
 
     class Dialog_Controls {

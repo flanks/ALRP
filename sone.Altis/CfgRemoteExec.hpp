@@ -15,6 +15,7 @@ class CfgRemoteExec {
 
         /* Client only functions */
         //Life functions
+		F(life_fnc_copYelp,CLIENT)
         F(life_fnc_addVehicle2Chain,CLIENT)
         F(life_fnc_adminid,CLIENT)
         F(life_fnc_admininfo,CLIENT)

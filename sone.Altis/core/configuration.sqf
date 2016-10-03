@@ -53,6 +53,7 @@ life_seatbelt = false;
 life_seatwarn = false;
 life_isRebooting = false;
 life_drink = 0;
+life_yelp_active = false;
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];

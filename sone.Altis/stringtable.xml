@@ -5460,6 +5460,12 @@
             <Russian>Режим RPG игра, разработанная компанией Tonic.</Russian>
             <German>Ein RPG-Spiel-Modus von Tonic entwickelt.</German>
         </Key>
+		<Key ID="STR_MISC_yelpON">
+            <Original>Yelp On</Original>
+        </Key>
+        <Key ID="STR_MISC_yelpOFF">
+             <Original>Yelp Off</Original>
+        </Key>
     </Package>
     <Package name="Housing_Strings">
         <Key ID="STR_House_ContainerError">
