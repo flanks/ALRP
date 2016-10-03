@@ -2,13 +2,10 @@
 /*
     File: fn_fuelSupply.sqf
     Author: Ulrich "Zero" Werren
-
     Description:
     Fuel Tank Job, Fill Gas Station with Fuel.
 */
-
-
-private["_vehicle","_fuelSpace","_fuelState","_fuelFeedState","_fuelLevel","_distance","_shortest","_random","_another","_ui","_progress","_pgText","_win","_price","_pricem"];
+private ["_vehicle","_fuelSpace","_fuelState","_fuelFeedState","_fuelLevel","_distance","_shortest","_random","_another","_ui","_progress","_pgText","_win","_price","_pricem"];
 _vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle) exitWith {};
 if (!isNil {_vehicle getVariable "fuelTankWork"}) exitWith {titleText[localize "STR_FuelTank_InUse","PLAIN"];};
@@ -54,7 +51,7 @@ _random = floor((random 11000) + 1500);
             };
         };
     };
-} forEach (nearestObjects [_vehicle, ["Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F"], 100]);
+} forEach (nearestObjects [_vehicle, ["Land_FuelStation_Feed_F","Land_fs_feed_F"], 100]);
 
 if (_fuelFeedState <= 0) exitWith {titleText [localize "STR_FuelTank_FeedFull","PLAIN"]; life_action_inUse = false;};
 
@@ -75,11 +72,11 @@ _vehicle remoteExec ["life_fnc_soundDevice",-2];
 life_action_inUse = false;
 
 disableSerialization;
-13 cutRsc ["life_progress","PLAIN"];
+"progressBar" cutRsc ["life_progress","PLAIN"];
 _ui = uiNamespace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
-_pgText ctrlSetText format["Tank  %1 Ltr / %2 Ltr",_fuelState,_fuelSpace];
+_pgText ctrlSetText format ["Tank  %1 Ltr / %2 Ltr",_fuelState,_fuelSpace];
 _fuelLevel = (1 / _fuelSpace) * _fuelState;
 _progress progressSetPosition _fuelLevel;
 
@@ -97,7 +94,7 @@ waitUntil {
 
     _fuelLevel = (1 / _fuelSpace) * _fuelState;
     _progress progressSetPosition _fuelLevel;
-    _pgText ctrlSetText format["Tank  %1 Ltr / %2 Ltr  ( $ %3 / Ltr )",_fuelState,_fuelSpace,_price];
+    _pgText ctrlSetText format ["Tank  %1 Ltr / %2 Ltr  ( $ %3 / Ltr )",_fuelState,_fuelSpace,_price];
 
     if (_fuelState isEqualTo 0 || _fuelFeedState <= 0) exitWith {true};
 
@@ -112,7 +109,7 @@ waitUntil {
     }else{
         _x setVariable ["fuelTank",[_fuelFeedState,time],true];
     };
-} forEach (nearestObjects [_vehicle, ["Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F"], 100]);
+} forEach (nearestObjects [_vehicle, ["Land_FuelStation_Feed_F","Land_fs_feed_F"], 100]);
 
 if (_fuelFeedState <= 0) then {titleText [localize "STR_FuelTank_FeedFull","PLAIN"]};
 if (_fuelState <= 0) then {titleText [localize "STR_FuelTank_Empty","PLAIN"]};
@@ -121,6 +118,6 @@ sleep 2;
 CASH = CASH + _win;
 [0] call SOCK_fnc_updatePartial;
 
-titleText [format[localize "STR_FuelTank_Money", _win], "PLAIN"];
-13 cutText ["","PLAIN"];
+titleText [format [localize "STR_FuelTank_Money", _win], "PLAIN"];
+"progressBar" cutText ["","PLAIN"];
 _vehicle setVariable ["fuelTankWork",nil,true];

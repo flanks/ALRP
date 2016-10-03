@@ -77,34 +77,27 @@ class WeaponShops {
     /*---------------------------- End of Bounty Hunter Shops ----------------------*/ 
 
     class rebel {
-        name = "LC - Chief of LC Weapon Shop";
+        name = "AFF Weapon Shop";
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-           // 5.56
-            { "arifle_Mk20C_plain_F",   "", 200000, -1 }, // MK20C
-            { "arifle_TRG21_F",         "", 200000, -1 }, // TRG
-            { "arifle_SPAR_01_khk_F",   "", 300000, -1 }, // SPAR
-			{ "arifle_AKS_F", "", 250000, 5000 },
-            { "arifle_SDAR_F",          "", 150000, -1 }, // SDAR
+           // 5.56          
+            { "arifle_TRG21_F",         "", 10000, -1 }, // TRG
+            { "arifle_SDAR_F",          "", 5000, -1 }, // SDAR
 			
 			// 6.5
-            { "arifle_Katiba_F","", 200000, -1 }, // Katiba	
-			{ "srifle_DMR_07_hex_F","", 300000, -1 }, // CMR-76	
+            { "arifle_Katiba_F","", 20000, -1 }, // Katiba	
+			
 			
 			// 7.62
-            { "arifle_AKM_F","", 700000, -1 }, // AKM
-			{ "arifle_AK12_F","", 800000, -1 }, // AK12
-			{ "srifle_DMR_06_camo_F","", 850000, -1 }, // MK 14
-			{ "srifle_DMR_03_multicam_F","", 900000, -1 }, // MK1
-			{ "srifle_EBR_F","", 900000, -1 }, // MK18
-			{ "srifle_DMR_01_F","", 700000, -1 }, // Rahim
+	        { "srifle_EBR_F","", 100000, -1 }, // MK18
+			{ "srifle_DMR_01_F","", 70000, -1 }, // Rahim
             
             // 9 mm
-            { "SMG_01_F",               "", 150000, -1 }, // SMG
+            { "SMG_01_F",               "", 15000, -1 }, // SMG
             { "hgun_Rook40_F",          "", 6500,   -1 }, // ROOK
-            { "hgun_PDW2000_F",         "", 120000, -1 }, // PDW
+            { "hgun_PDW2000_F",         "", 12000, -1 }, // PDW
 			{ "hgun_P07_F",         	 "", 10000,   -1 }, // p07
 			
 
@@ -126,9 +119,9 @@ class WeaponShops {
 			
 			
 			// 7.62
-            { "20Rnd_762x51_Mag",    "", 10000,   -1 }, // MK1/MK1/MK14
-			{ "10Rnd_762x54_Mag",    "", 10000,   -1 }, // Rahim
-			{ "30Rnd_762x39_Mag_F",  "", 10000,   -1 }, // AKM/AK12
+            { "20Rnd_762x51_Mag",    "", 1000,   -1 }, // MK1/MK1/MK14
+			{ "10Rnd_762x54_Mag",    "", 1000,   -1 }, // Rahim
+
 			
             // .45 ACP
             { "30Rnd_45ACP_Mag_SMG_01", "", 1000,   -1 }, // .45 ACP
@@ -158,16 +151,16 @@ class WeaponShops {
             { "acc_flashlight",         "", 1000,   -1 }, // Flashligt
             
             // Silencer
-            { "muzzle_snds_M",          "", 100000,   -1 }, // 5.56 Silencer
-			{ "muzzle_snds_H",          "", 100000,   -1 }, // 6.5 Silencer
-			{ "muzzle_snds_B",          "", 150000,   -1 }, // 7.62 Silencer
-            { "muzzle_snds_L",          "", 50000,   -1 }, // Silencer
-            { "muzzle_snds_acp",        "", 50000,   -1 }  // Silencer ACP
+            { "muzzle_snds_M_snd_F",          "", 25000,   -1 }, // 5.56 Silencer
+			{ "muzzle_snds_H_snd_F",          "", 20000,   -1 }, // 6.5 Silencer
+			{ "muzzle_snds_B_snd_F",          "", 50000,   -1 }, // 7.62 Silencer
+            { "muzzle_snds_L",          "", 5000,   -1 }, // Silencer
+            { "muzzle_snds_acp",        "", 5000,   -1 }  // Silencer ACP
         };
     };
 
     class rebelofficer {
-    name = "LC - Officer Weapon Shop";
+    name = "AFF - Officer Weapon Shop";
     side = "civ";
     license = "rebelofficer";
     level[] = { "", "", -1, "" };
@@ -208,7 +201,7 @@ class WeaponShops {
 
 
     class rebelmember {
-    name = "LC - Member Weapon Shop";
+    name = "AFF - Member Weapon Shop";
     side = "civ";
     license = "rebelmember";
     level[] = { "", "", -1, "" };
@@ -246,7 +239,7 @@ class WeaponShops {
     };
 
     class rebelrecruit {
-    name = "LC - Recruit Weapon Shop";
+    name = "AFF - Recruit Weapon Shop";
     side = "civ";
     license = "rebelrecruit";
     level[] = { "", "", -1, "" };
@@ -280,14 +273,12 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             // 5.56
-            { "arifle_Mk20C_plain_F",   "", 200000, -1 }, // MK20C
-            { "arifle_TRG21_F",         "", 200000, -1 }, // TRG
+            { "arifle_Mk20C_plain_F",   "", 200000, -1 }, // MK20C           
             { "arifle_SPAR_01_khk_F",   "", 300000, -1 }, // SPAR
 			{ "arifle_AKS_F", "", 250000, 5000 },
             { "arifle_SDAR_F",          "", 150000, -1 }, // SDAR
 			
-			// 6.5
-            { "arifle_Katiba_F","", 200000, -1 }, // Katiba	
+			// 6.5	
 			{ "srifle_DMR_07_hex_F","", 300000, -1 }, // CMR-76	
 			
 			// 7.62
@@ -295,7 +286,6 @@ class WeaponShops {
 			{ "arifle_AK12_F","", 800000, -1 }, // AK12
 			{ "srifle_DMR_06_camo_F","", 850000, -1 }, // MK 14
 			{ "srifle_DMR_03_multicam_F","", 900000, -1 }, // MK1
-			{ "srifle_EBR_F","", 900000, -1 }, // MK18
 			{ "srifle_DMR_01_F","", 700000, -1 }, // Rahim
             
             // 9 mm
@@ -387,7 +377,7 @@ class WeaponShops {
 
     //Basic Shops
     class genstore {
-        name = "Tanoa General Store";
+        name = "SecretOne General Store";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
@@ -409,7 +399,7 @@ class WeaponShops {
     };
 
     class f_station_store {
-        name = "Tanoa Fuel Station Store";
+        name = "SecretOne Fuel Station Store";
         side = "";
         license = "";
         level[] = { "", "", -1, "" };
@@ -529,7 +519,7 @@ class WeaponShops {
             // { "arifle_SPAR_01_blk_F", "", 35000, -1 },
             // { "arifle_SPAR_03_blk_F", "", 80000, -1 },
             // { "srifle_DMR_07_blk_F", "", 50000, -1 },
-
+            // { "srifle_DMR_03_F", "", 80000, -1 },
             //  Items
             // { "HandGrenade_Stone", "Flashbang", 1700, -1 },
             // { "FirstAidKit", "First Aid", 150, -1 },
@@ -571,7 +561,7 @@ class WeaponShops {
 	
 	 //Cop Shops
     class cop_basic {
-        name = "Tanoa Police - Cadet Shop";
+        name = "SecretOne Police - Cadet Shop";
         side = "cop";
         license = "";
         level[] = { "", "", -1, "" };
@@ -612,7 +602,7 @@ class WeaponShops {
     };
 
     class cop_patrol {
-        name = "Tanoa Police - Officer Shop";
+        name = "SecretOne Police - Officer Shop";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
@@ -658,7 +648,7 @@ class WeaponShops {
     };
 
     class cop_sergeant {
-        name = "Tanoa Police - Sergeant and higher Shop";
+        name = "SecretOne Police - Sergeant and higher Shop";
         side = "cop";
         license = "";
         level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
@@ -670,10 +660,9 @@ class WeaponShops {
             { "arifle_MX_Black_F", "", 0, 0 },
             { "arifle_SPAR_01_blk_F", "", 0, -1 },
             { "arifle_SPAR_03_blk_F", "", 0, -1 },
-			{ "arifle_MX_SW_F", "", 0, -1 },
-			{ "arifle_MXM_F", "", 0, -1 },
 			{ "arifle_MXM_Black_F", "", 0, -1 },
 			{ "arifle_MX_SW_Black_F", "", 0, -1 },
+			{ "srifle_DMR_03_F", "", 0, -1 },
 			
             { "srifle_DMR_07_blk_F", "", 0, -1 },
 
@@ -696,6 +685,7 @@ class WeaponShops {
             { "30Rnd_65x39_caseless_mag", "", 0 },
             { "30Rnd_556x45_Stanag", "", 0 },
 			{ "30Rnd_65x39_caseless_mag_Tracer", "", 0 },
+			{ "100Rnd_65x39_caseless_mag_Tracer", "", 0 },
             { "20Rnd_762x51_Mag", "", 0 },
             { "20Rnd_650x39_Cased_Mag_F", "", 0 }
         };
@@ -708,8 +698,9 @@ class WeaponShops {
             { "optic_Hamr", "", 0, -1},
             { "optic_Arco", "",       0, -1 },
 			{ "optic_MRCO", "",       0, -1 },
-            { "optic_ERDCO_blk_F", "", 0, -1 }, 
-
+            { "optic_ERDCO_blk_F", "", 0, -1 },
+            { "optic_DMS", "", 0 },			
+            { "optic_AMS", "", 0 },
             // Silencers
             { "muzzle_snds_B", "", 0},
             { "muzzle_snds_M",          "", 0,   -1 }, // 5.56 Silencer

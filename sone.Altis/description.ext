@@ -42,12 +42,6 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class introsound
-    {
-        name = "introsound";
-        sound[] = {"\sounds\introsound.ogg", 0.3, 1};
-        titles[] = {};
-    };
 
     class sms{
         name = "sms";

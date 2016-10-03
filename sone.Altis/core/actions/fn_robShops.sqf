@@ -16,13 +16,13 @@ if (currentWeapon _robber isEqualTo "") exitWith { hint "You do not threaten me!
 if (_kassa isEqualTo 0) exitWith { hint "There is no cash in the register" };
 
 _cops = (west countSide playableUnits);
-if(_cops < 4) exitWith{hint "Not enough police officers online !";};
+if(_cops < 2) exitWith{hint "Not enough police officers online !";};
 
 life_action_inUse = true;
-_kassa = 10000 + round(random 10000);
+_kassa = 10000 + round(random 60000);
 _shop removeAction _action;
 _chance = random(100);
-if(_chance >= 10) then {
+if(_chance >= 50) then {
 	hint "The cashier has triggered the silent Alarm, the Cops are on the way !";
 	[1,"ATTENTION! - Gas station is being robbed!"] remoteExecCall ["life_fnc_broadcast",west];
 	[_veh,"robstationSound"] remoteExec ["life_fnc_say3D",RANY];

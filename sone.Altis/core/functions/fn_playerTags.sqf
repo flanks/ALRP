@@ -47,20 +47,7 @@ _masks = LIFE_SETTINGS(getArray,"clothing_masks");
                     case (uniform _x in ["U_B_GEN_Commander_F"]):       {format["<t align='center' color='#B8860B'><img image='icons\bountyhunter.paa' size='2'></img> The BountyHunter</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
                     case (uniform _x in ["U_B_GEN_Soldier_F"]):         {format["<t align='center' color='#B8860B'><img image='icons\bountyhunter.paa' size='2'></img> The BountyHunter</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
 
-                    //Legion Contras
-                    case (uniform _x in ["U_IG_Guerilla1_1"]):          {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_G_Story_Protagonist_F"]): {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_G_resistanceLeader_F"]):  {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_IG_leader"]):               {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_O_PilotCoveralls"]):        {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_O_SpecopsUniform_ocamo"]):  {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_C_Soldier_Para_1_F"]):    {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_C_Soldier_Para_2_F"]):    {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_C_Soldier_Para_3_F"]):    {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_C_Soldier_Para_4_F"]):    {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_I_C_Soldier_Para_5_F"]):    {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-                    case (uniform _x in ["U_O_GhillieSuit"]):           {format["<t align='center' color='#B8860B'><img image='icons\lc.paa' size='2'></img> Legion Contras</t><br/><t align='center' color='#fffff'> %1</t>",(_x getVariable ["realname",name _x])]};
-
+                   
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format["<img image='%1' size='2'></img> Police<br/><t align='center' color='#fffff'>%2</t>",switch ((_x getVariable "rank")) do {

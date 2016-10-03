@@ -1,6 +1,6 @@
 _serverName = "SecretOne Life 2.0";
 _plrName = profileName;
-_sound = "introsound";
+
 
 //Pause the script until the player has spawned.
 waitUntil {alive player};
@@ -17,7 +17,7 @@ _role1names = ["SecretOne Life 3.2"];
 _role2 = "Server Owners:";
 _role2names = ["Flanks","TrackTerror"];
 _role3 = "Senior Administrators:";
-_role3names = ["Adolf","Daniel","KlegoFTW","Crisss","Vicious","Begravaren"];
+_role3names = ["Adolf","Daniel","CrisSs",];
 _role4 = "Server Administrators:";
 _role4names = ["Soldier"];
 _role5 = "Game Developers";
