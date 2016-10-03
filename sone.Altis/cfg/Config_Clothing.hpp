@@ -487,7 +487,12 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "",               2500, { "", "", -1 } },
             { "U_I_C_Soldier_Bandit_4_F", "",               2500, { "", "", -1 } },
             { "U_I_C_Soldier_Bandit_5_F", "",               2500, { "", "", -1 } },
-            { "U_B_CTRG_Soldier_urb_3_F", "",               25000, { "", "", -1 } }
+            { "U_B_CTRG_Soldier_urb_3_F", "",               25000, { "", "", -1 } },
+			{ "U_I_C_Soldier_Para_1_F", "", 5000, {"", "", -1} },
+			{ "U_I_C_Soldier_Para_2_F", "", 5000, {"", "", -1} },
+			{ "U_I_C_Soldier_Para_3_F", "", 5000, {"", "", -1} },
+			{ "U_I_C_Soldier_Para_4_F", "", 5000, {"", "", -1} },
+			{ "U_I_C_Soldier_Para_5_F", "", 5000, {"", "", -1} }
         };
         
         headgear[] = {
@@ -629,11 +634,6 @@ class Clothing {
             { "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
             { "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
             { "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
-			{ "U_I_C_Soldier_Para_1_F", "", 5000, {"", "", -1} },
-			{ "U_I_C_Soldier_Para_2_F", "", 5000, {"", "", -1} },
-			{ "U_I_C_Soldier_Para_3_F", "", 5000, {"", "", -1} },
-			{ "U_I_C_Soldier_Para_4_F", "", 5000, {"", "", -1} },
-			{ "U_I_C_Soldier_Para_5_F", "", 5000, {"", "", -1} },
             { "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
         };
 
