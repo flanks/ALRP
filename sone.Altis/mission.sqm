@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15550.109,55.029419,16190.029};
-		dir[]={0.68227994,-0.25625056,0.68477887};
-		up[]={0.18089846,0.96659654,0.1815595};
-		aside[]={0.70842957,1.1001248e-006,-0.7058419};
+		pos[]={15609.287,59.552303,16492.814};
+		dir[]={0.43554765,-0.29718325,0.84977889};
+		up[]={0.13558272,0.95479691,0.26452714};
+		aside[]={0.88997871,9.4393909e-007,-0.45615131};
 	};
 };
 binarizationWanted=0;
@@ -97,8 +97,7 @@ addons[]=
 	"A3_Structures_F_Kart_Signs_Companies",
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Supplies_F_Heli_CargoNets",
-	"A3_Structures_F_System",
-	"A3_Structures_F_EPC_Items_Electronics"
+	"A3_Structures_F_System"
 };
 class AddonsMetaData
 {
@@ -321,24 +320,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -353,6 +334,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -410,7 +409,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2338;
+		items=2330;
 		class Item0
 		{
 			dataType="Marker";
@@ -892,7 +891,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorYellow";
 			id=59;
-			atlOffset=0.15224457;
+			atlOffset=0.0031509399;
 		};
 		class Item46
 		{
@@ -12414,7 +12413,7 @@ class Mission
 					};
 					id=959;
 					type="C_man_polo_3_F";
-					atlOffset=0.15223694;
+					atlOffset=0.095352173;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -97590,127 +97589,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15799.881,20.692926,17393.557};
-				angles[]={6.2746301,2.8355143,0.0047591813};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[0.301314,-0.953525,0],[0,0,1]]; this setPosASL [15799.882813, 17393.560547, 18.13254]};";
-			};
-			id=9149;
-			type="Land_CampingTable_small_F";
-			atlOffset=2.120575;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2288
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15799.893,18.323536,17393.496};
-				angles[]={6.2746301,2.8357761,0.0047591813};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[0.301078,-0.9536,0],[0,0,1]]; this setPosASL [15799.893555, 17393.498047, 18.945547]}; this addAction [""<t color='#00FF00'>[South Gate]</t> Open"", {cp2_gate_south animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_south animationPhase 'Door_1_rot' == 0}""];  this addAction [""<t color='#00FF00'>[South Gate]</t> Close"", {cp2_gate_south animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_south animationPhase 'Door_1_rot' == 1}""];";
-			};
-			id=9150;
-			type="Land_Laptop_device_F";
-			atlOffset=0.0020866394;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2289
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={15793.033,27.36985,17458.586};
 				angles[]={0,5.2538075,6.2815661};
 			};
@@ -97767,7 +97645,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2290
+		class Item2288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -97828,7 +97706,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2291
+		class Item2289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -97889,7 +97767,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2292
+		class Item2290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -97950,7 +97828,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2293
+		class Item2291
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98011,7 +97889,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2294
+		class Item2292
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98072,7 +97950,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2295
+		class Item2293
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98133,7 +98011,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2296
+		class Item2294
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98194,7 +98072,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2297
+		class Item2295
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98255,7 +98133,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2298
+		class Item2296
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98316,128 +98194,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2299
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15730.93,19.375246,17442.227};
-				angles[]={6.2751846,5.0181184,6.2791886};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[-0.953628,0.300987,0],[0,0,1]]; this setPosASL [15730.928711, 17442.228516, 19.218563]}; this addAction [""<t color='#00FF00'>[West Gate]</t> Open"", {cp2_gate_west animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_west animationPhase 'Door_1_rot' == 0}""];    this addAction [""<t color='#00FF00'>[West Gate]</t> Close"", {cp2_gate_west animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_west animationPhase 'Door_1_rot' == 1}""];";
-			};
-			id=9161;
-			type="Land_Laptop_device_F";
-			atlOffset=0.85403252;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2300
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15730.987,18.812742,17442.195};
-				angles[]={6.2751846,5.0178738,6.2791886};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[-0.953703,0.300751,0],[0,0,1]]; this setPosASL [15730.985352, 17442.199219, 18.404263]};";
-			};
-			id=9162;
-			type="Land_CampingTable_small_F";
-			atlOffset=0.041570663;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2301
+		class Item2297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98498,7 +98255,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2302
+		class Item2298
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98559,7 +98316,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2303
+		class Item2299
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98619,7 +98376,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2304
+		class Item2300
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98680,7 +98437,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2305
+		class Item2301
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98740,7 +98497,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2306
+		class Item2302
 		{
 			dataType="Object";
 			class PositionInfo
@@ -98801,249 +98558,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2307
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15794.571,35.359119,17461.373};
-				angles[]={0,3.6830111,6.2815661};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[-0.515347,-0.856982,0],[0,0,1]]; this setPosASL [15794.570313, 17461.373047, 32.27319]};";
-			};
-			id=9169;
-			type="Land_CampingTable_small_F";
-			atlOffset=2.581974;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2308
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15794.531,32.584152,17461.326};
-				angles[]={6.2791886,3.6832557,0.0053265258};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[-0.515559,-0.856854,0],[0,0,1]]; this setPosASL [15794.53125, 17461.326172, 33.0870857]}; this addAction [""<t color='#00FF00'>[East Gate]</t> Open"", {cp2_gate_east animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_east animationPhase 'Door_1_rot' == 0}""];  this addAction [""<t color='#00FF00'>[East Gate]</t> Close"", {cp2_gate_east animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_east animationPhase 'Door_1_rot' == 1}""];  this addAction [""<t color='#00FF00'>[South Gate]</t> Open"", {cp2_gate_south animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_south animationPhase 'Door_1_rot' == 0}""];  this addAction [""<t color='#00FF00'>[South Gate]</t> Close"", {cp2_gate_south animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_south animationPhase 'Door_1_rot' == 1}""];  this addAction [""<t color='#00FF00'>[West Gate]</t> Open"", {cp2_gate_west animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_west animationPhase 'Door_1_rot' == 0}""];    this addAction [""<t color='#00FF00'>[West Gate]</t> Close"", {cp2_gate_west animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_west animationPhase 'Door_1_rot' == 1}""];  this addAction [""<t color='#00FF00'>[All Gates]</t> Open"", {{_x animate [""Door_1_rot"", 1]} forEach [cp2_gate_east, cp2_gate_south, cp2_gate_west];}, nil, 10, true, false, """", ""playerSide == west""];    this addAction [""<t color='#00FF00'>[All Gates]</t> Close"", {{_x animate [""Door_1_rot"", 0]} forEach [cp2_gate_east, cp2_gate_south, cp2_gate_west];}, nil, 10, true, false, """", ""playerSide == west""];";
-			};
-			id=9170;
-			type="Land_Laptop_device_F";
-			atlOffset=0.057376862;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2309
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15843.463,21.27129,17437.713};
-				angles[]={6.2765174,1.7432104,0.0055350577};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[0.985174,-0.171561,0],[0,0,1]]; this setPosASL [15843.464844, 17437.714844, 18.71147]};";
-			};
-			id=9171;
-			type="Land_CampingTable_small_F";
-			atlOffset=2.1426773;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2310
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15843.527,18.882,17437.695};
-				angles[]={6.2765174,1.7434565,0.0055350577};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.40000001;
-				init="this enableSimulation false; this allowDamage false; if (local this) then {this setVectorDirAndUp [[0.985131,-0.171804,0],[0,0,1]]; this setPosASL [15843.52832, 17437.697266, 19.526155]}; this addAction [""<t color='#00FF00'>[East Gate]</t> Open"", {cp2_gate_east animate [""Door_1_rot"", 1]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_east animationPhase 'Door_1_rot' == 0}""];  this addAction [""<t color='#00FF00'>[East Gate]</t> Close"", {cp2_gate_east animate [""Door_1_rot"", 0]}, nil, 10, true, false, """", ""playerSide == west && {cp2_gate_east animationPhase 'Door_1_rot' == 1}""];";
-			};
-			id=9172;
-			type="Land_Laptop_device_F";
-			atlOffset=0.0035743713;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="enableSimulation";
-					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item2311
+		class Item2303
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99104,7 +98619,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2312
+		class Item2304
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99165,7 +98680,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2313
+		class Item2305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99226,7 +98741,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2314
+		class Item2306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99287,7 +98802,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2315
+		class Item2307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99348,7 +98863,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2316
+		class Item2308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99409,7 +98924,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2317
+		class Item2309
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99470,7 +98985,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2318
+		class Item2310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99531,7 +99046,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2319
+		class Item2311
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99591,7 +99106,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2320
+		class Item2312
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99652,7 +99167,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2321
+		class Item2313
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99713,7 +99228,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2322
+		class Item2314
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99774,7 +99289,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2323
+		class Item2315
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99835,7 +99350,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2324
+		class Item2316
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99896,7 +99411,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2325
+		class Item2317
 		{
 			dataType="Object";
 			class PositionInfo
@@ -99957,7 +99472,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2326
+		class Item2318
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100017,7 +99532,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2327
+		class Item2319
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100078,7 +99593,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2328
+		class Item2320
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100138,7 +99653,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2329
+		class Item2321
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100198,7 +99713,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item2330
+		class Item2322
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -100211,7 +99726,7 @@ class Mission
 			type="Logic";
 			atlOffset=0.090999603;
 		};
-		class Item2331
+		class Item2323
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -100224,20 +99739,20 @@ class Mission
 			type="Logic";
 			atlOffset=0.17099953;
 		};
-		class Item2332
+		class Item2324
 		{
 			dataType="Marker";
-			position[]={15779.852,14971116,17440.895};
+			position[]={15779.852,47.142014,17440.895};
 			name="marker_258";
-			text="Lakka Checkpoint";
+			text="Telos Checkpoint";
 			type="mil_box";
 			colorName="ColorWEST";
 			a=0.69999999;
 			b=0.69999999;
 			id=9199;
-			atlOffset=14971102;
+			atlOffset=32.918396;
 		};
-		class Item2333
+		class Item2325
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100254,7 +99769,7 @@ class Mission
 			type="Land_CncWall4_F";
 			atlOffset=-9.5367432e-007;
 		};
-		class Item2334
+		class Item2326
 		{
 			dataType="Object";
 			class PositionInfo
@@ -100270,7 +99785,7 @@ class Mission
 			id=9202;
 			type="Land_CncWall1_F";
 		};
-		class Item2335
+		class Item2327
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -100282,7 +99797,7 @@ class Mission
 			id=9204;
 			type="Logic";
 		};
-		class Item2336
+		class Item2328
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -100294,7 +99809,7 @@ class Mission
 			id=9205;
 			type="Logic";
 		};
-		class Item2337
+		class Item2329
 		{
 			dataType="Logic";
 			class PositionInfo
