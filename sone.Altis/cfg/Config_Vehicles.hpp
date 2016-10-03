@@ -1,4 +1,4 @@
-class CarShops {
+﻿class CarShops {
     /*
     *    ARRAY FORMAT:
     *        0: STRING (Classname)
@@ -495,7 +495,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Monster", "civ", {
-                "textures\cuv\vehicles\TRG_hobos_KB_hatch.jpg"
+                "textures\civ\vehicles\TRG_hobos_KB_hatch.jpg"
             } },
             { "Police", "cop", {
                 /*"#(ai,64,64,1)Fresnel(1.3,7)"*/
