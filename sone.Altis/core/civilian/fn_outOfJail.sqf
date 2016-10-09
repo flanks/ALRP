@@ -12,4 +12,4 @@ player addHeadgear life_prison_headgear;
 player addVest life_prison_vest;
 
 
-hint "You have been released. Make sure you behave!"};
+hint "You have been released. Make sure you behave!";

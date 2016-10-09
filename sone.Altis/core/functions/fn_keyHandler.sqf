@@ -268,17 +268,30 @@ switch (_code) do {
         };
     };
 
-	case 76: {
-	
-        if (playerSide in [west,independent] && {vehicle player != player} && {!life_yelp_active} && {((driver vehicle player) == player)}) then {
+	case 2:  {
+        if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren2_active} && {((driver vehicle player) == player)}) then {
             [] spawn {
-                life_yelp_active = true;
-                sleep 4.0;
-                life_yelp_active = false;
+                life_siren2_active = true;
+                sleep 4.7;
+                life_siren2_active = false;
             };
-		};	
-		
-	};	
+
+            _veh = vehicle player;
+            if (isNil {_veh getVariable "siren2"}) then {_veh setVariable ["siren2",false,true];};
+            if ((_veh getVariable "siren2")) then {
+                titleText [localize "STR_MISC_SirensOFF","PLAIN"];
+                _veh setVariable ["siren2",false,true];
+            } else {
+                titleText [localize "STR_MISC_SirensON","PLAIN"];
+                _veh setVariable ["siren2",true,true];
+                if (playerSide isEqualTo west) then {
+                    [_veh] remoteExec ["life_fnc_copYelp",RCLIENT];
+                } else {
+                    [_veh] remoteExec ["life_fnc_copYelp",RCLIENT];
+                };
+            };
+        };
+    };
 			
 	
     //F Key
@@ -374,7 +387,7 @@ switch (_code) do {
                             _veh animateDoor ['DoorL_Back_Open',1];
                             _veh animateDoor ['DoorR_Back_Open ',1];
                         } else {
-                            [_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
+                            [_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];	
 
                             _veh animateDoor ["door_back_R",1];
                             _veh animateDoor ["door_back_L",1];

@@ -193,6 +193,7 @@ class WeaponShops {
             { "acc_flashlight", "", 1000 },
                         // Silencers
             { "muzzle_snds_B",   "", 2750},
+			{ "muzzle_snds_65_TI_ghex_F",  "", 27500,   -1 }, // 6.5 Silencer
             { "muzzle_snds_L",   "", 2750},
             { "muzzle_snds_acp", "", 2000},
             { "muzzle_snds_H",   "", 2750}
@@ -273,25 +274,25 @@ class WeaponShops {
         level[] = { "", "", -1, "" };
         items[] = {
             // 5.56
-            { "arifle_Mk20C_plain_F",   "", 200000, -1 }, // MK20C           
-            { "arifle_SPAR_01_khk_F",   "", 300000, -1 }, // SPAR
-			{ "arifle_AKS_F", "", 250000, 5000 },
-            { "arifle_SDAR_F",          "", 150000, -1 }, // SDAR
+            { "arifle_Mk20C_plain_F",   "", 60000, -1 }, // MK20C           
+            { "arifle_SPAR_01_khk_F",   "", 65000, -1 }, // SPAR
+			{ "arifle_AKS_F", "", 55000, 5000 },
+            { "arifle_SDAR_F",          "", 15000 -1 }, // SDAR
 			
 			// 6.5	
 			{ "srifle_DMR_07_hex_F","", 300000, -1 }, // CMR-76	
 			
 			// 7.62
-            { "arifle_AKM_F","", 700000, -1 }, // AKM
-			{ "arifle_AK12_F","", 800000, -1 }, // AK12
-			{ "srifle_DMR_06_camo_F","", 850000, -1 }, // MK 14
-			{ "srifle_DMR_03_multicam_F","", 900000, -1 }, // MK1
-			{ "srifle_DMR_01_F","", 700000, -1 }, // Rahim
+            { "arifle_AKM_F","", 600000, -1 }, // AKM
+			{ "arifle_AK12_F","", 700000, -1 }, // AK12
+			{ "srifle_DMR_06_camo_F","", 750000, -1 }, // MK 14
+			{ "srifle_DMR_03_multicam_F","", 800000, -1 }, // MK1
+			{ "srifle_DMR_01_F","", 600000, -1 }, // Rahim
             
             // 9 mm
-            { "SMG_01_F",               "", 150000, -1 }, // SMG
+            { "SMG_01_F",               "", 15000, -1 }, // SMG
             { "hgun_Rook40_F",          "", 6500,   -1 }, // ROOK
-            { "hgun_PDW2000_F",         "", 120000, -1 }, // PDW
+            { "hgun_PDW2000_F",         "", 12000, -1 }, // PDW
 			{ "hgun_P07_F",         	 "", 10000,   -1 }, // p07
 			
 
@@ -313,9 +314,9 @@ class WeaponShops {
 			
 			
 			// 7.62
-            { "20Rnd_762x51_Mag",    "", 10000,   -1 }, // MK1/MK1/MK14
-			{ "10Rnd_762x54_Mag",    "", 10000,   -1 }, // Rahim
-			{ "30Rnd_762x39_Mag_F",  "", 10000,   -1 }, // AKM/AK12
+            { "20Rnd_762x51_Mag",    "", 1000,   -1 }, // MK1/MK1/MK14
+			{ "10Rnd_762x54_Mag",    "", 1000,   -1 }, // Rahim
+			{ "30Rnd_762x39_Mag_F",  "", 1000,   -1 }, // AKM/AK12
 			
             // .45 ACP
             { "30Rnd_45ACP_Mag_SMG_01", "", 1000,   -1 }, // .45 ACP
@@ -347,6 +348,7 @@ class WeaponShops {
             // Silencer
             { "muzzle_snds_M",          "", 100000,   -1 }, // 5.56 Silencer
 			{ "muzzle_snds_H",          "", 100000,   -1 }, // 6.5 Silencer
+			{ "muzzle_snds_65_TI_hex_F",          "", 100000,   -1 }, // 6.5 Silencer
 			{ "muzzle_snds_B",          "", 150000,   -1 }, // 7.62 Silencer
             { "muzzle_snds_L",          "", 50000,   -1 }, // Silencer
             { "muzzle_snds_acp",        "", 50000,   -1 }  // Silencer ACP
@@ -555,6 +557,7 @@ class WeaponShops {
             // { "muzzle_snds_B", "", 2750},
             // { "muzzle_snds_M",          "", 1000,   -1 }, // 5.56 Silencer
             // { "muzzle_snds_L", "", 2750},
+			// { "muzzle_snds_65_TI_blk_F", "", 2750},
             // { "muzzle_snds_H", "", 2750 }
         // };
     // };
@@ -705,6 +708,7 @@ class WeaponShops {
             { "muzzle_snds_B", "", 0},
             { "muzzle_snds_M",          "", 0,   -1 }, // 5.56 Silencer
             { "muzzle_snds_L", "", 0},
+			{ "muzzle_snds_65_TI_blk_F", "", 0},
             { "muzzle_snds_H", "", 0 }
         };
     };

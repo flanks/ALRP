@@ -10,7 +10,7 @@ hint parseText (_text);
 
 _onScreenTime = 3;
 
-playsound _sound;
+//playsound _sound;
 sleep 2; //Wait in seconds before the credits start after player is in-game
 _role1 = "Welcome to";
 _role1names = ["SecretOne Life 3.2"];

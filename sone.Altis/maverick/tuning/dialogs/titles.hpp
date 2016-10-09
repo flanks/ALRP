@@ -31,7 +31,7 @@ class maverick_dialog_tuning_text
 	fadeout=0.2;
 	fadein=0.2;
 	duration = 6;
-	onLoad = "uiNamespace setVariable ['maverick_dialog_tuning_text',_this select 0];"
+	onLoad = "uiNamespace setVariable ['maverick_dialog_tuning_text',_this select 0];";
 
 	class controlsBackground {};
 
