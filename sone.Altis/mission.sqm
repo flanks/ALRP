@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3733.5986,37.989529,13013.713};
-		dir[]={-0.043851662,-0.41413948,-0.90919006};
-		up[]={-0.019953864,0.91019654,-0.41368732};
-		aside[]={-0.9988628,2.5808913e-007,0.048177149};
+		pos[]={3736.1311,43.870003,13025.399};
+		dir[]={-0.27202114,-0.37315476,-0.88700092};
+		up[]={-0.10941089,0.92776453,-0.35676432};
+		aside[]={-0.95605588,-6.4261258e-008,0.29319906};
 	};
 };
 binarizationWanted=0;
@@ -311,6 +311,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -325,24 +343,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1964,7 +1964,7 @@ class Mission
 			name="atm_marker_3";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=13.527183;
+			angle=13.527182;
 			id=180;
 			atlOffset=0.00021743774;
 		};
@@ -4545,6 +4545,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4552,7 +4553,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14758,6 +14758,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -14765,7 +14766,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15299,6 +15299,7 @@ class Mission
 						angles[]={0,2.0762773,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15307,7 +15308,7 @@ class Mission
 					};
 					id=1017;
 					type="B_RangeMaster_F";
-					atlOffset=0.37889671;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15420,6 +15421,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -15427,7 +15429,6 @@ class Mission
 					};
 					id=1020;
 					type="C_man_p_beggar_F";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31996,11 +31997,12 @@ class Mission
 		class Item843
 		{
 			dataType="Marker";
-			position[]={17492.24,13.28656,13260.158};
+			position[]={17492.24,9.1228679e+019,13260.158};
 			name="medic_spawn_3";
 			type="Empty";
-			angle=12.349454;
+			angle=12.348999;
 			id=199;
+			atlOffset=9.1228679e+019;
 		};
 		class Item844
 		{
@@ -66116,7 +66118,7 @@ class Mission
 			colorName="ColorRed";
 			a=350;
 			b=800;
-			angle=111.03888;
+			angle=111.03887;
 			id=8953;
 			atlOffset=-10.141556;
 		};
@@ -87665,7 +87667,7 @@ class Mission
 			position[]={3740.2791,1.0635454e-035,12993.858};
 			name="medic_spawn_1";
 			type="Empty";
-			angle=1.1439998;
+			angle=1.1439997;
 			id=9884;
 			atlOffset=-18.820049;
 		};
@@ -87681,11 +87683,12 @@ class Mission
 		class Item2174
 		{
 			dataType="Marker";
-			position[]={3731.4856,38.363079,12978.078};
+			position[]={3730.1519,38.363079,12998.353};
 			name="medic_spawn_6";
 			type="Empty";
 			angle=348.82355;
 			id=9886;
+			atlOffset=19.694777;
 		};
 		class Item2175
 		{
@@ -87693,7 +87696,7 @@ class Mission
 			position[]={3244.5684,2.1131334,12968.67};
 			name="cop_car_6";
 			type="Empty";
-			angle=178.38901;
+			angle=178.38899;
 			id=9889;
 		};
 		class Item2176
