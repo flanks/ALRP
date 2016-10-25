@@ -406,7 +406,7 @@ class LifeCfgVehicles {
     class O_MRAP_02_F {
         vItemSpace = 60;
         licenses[] = { {""}, {""}, {""}, {""} };
-        price = 2000000;
+        price = 100000;
         textures[] = { };
     };
 
@@ -1041,7 +1041,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Plane_Civil_01_F {
-        vItemSpace = 150;
+        vItemSpace = 700;
         vFuelSpace = 50000;
         licenses[] = { {"pilot"}, {""}, {""}, {""} };
         price = 700000;
@@ -1049,7 +1049,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Plane_Civil_racing_F {
-        vItemSpace = 150;
+        vItemSpace = 700;
         vFuelSpace = 50000;
         licenses[] = { {"pilot"}, {""}, {""}, {""} };
         price = 800000;

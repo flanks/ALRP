@@ -277,7 +277,7 @@ class WeaponShops {
             { "arifle_Mk20C_plain_F",   "", 60000, -1 }, // MK20C           
             { "arifle_SPAR_01_khk_F",   "", 65000, -1 }, // SPAR
 			{ "arifle_AKS_F", "", 55000, 5000 },
-            { "arifle_SDAR_F",          "", 15000 -1 }, // SDAR
+            { "arifle_SDAR_F",          ""50000, 15000 -1 }, // SDAR
 			
 			// 6.5	
 			{ "srifle_DMR_07_hex_F","", 300000, -1 }, // CMR-76	
