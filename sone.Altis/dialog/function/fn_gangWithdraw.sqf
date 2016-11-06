@@ -6,7 +6,7 @@
     Description:
     Withdraws money from the gang bank.
 */
-private["_value"];
+/*private["_value"];
 _value = parseNumber(ctrlText 2702);
 _gFund = GANG_FUNDS;
 group player setVariable ["gbank_in_use_by",player,true];
@@ -40,4 +40,4 @@ if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
         money_log = format ["%1 - %2 withdrew $%3 from their gang bank. Gang Bank Balance: $%4  Bank Balance: $%5  On Hand Balance: $%6",profileName,(getPlayerUID player),_value,[_gFund] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
     };
     publicVariableServer "money_log";
-};
+};*/

@@ -50,6 +50,13 @@ switch (true) do {
         [cursorObject] spawn life_fnc_blastingCharge;
         closeDialog 0;
     };
+	
+	case (_item isEqualTo "codeCracker"): {
+        player reveal fed_bank_1;
+        (group player) reveal fed_bank_1;
+        [cursorObject] spawn life_fnc_codeCracker;
+        closeDialog 0;
+    };
 
     case (_item isEqualTo "defusekit"): {
         [cursorObject] spawn life_fnc_defuseKit;

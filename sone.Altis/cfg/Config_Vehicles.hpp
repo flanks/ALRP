@@ -752,7 +752,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 	
 	class	B_T_VTOL_01_vehicle_blue_F {
-		vItemSpace = 200;
+		vItemSpace = 450;
         licenses[] = { {"pilot"}, {"cAir"}, {""}, {""} };
         price = 20000000;
         textures[] = {
@@ -1041,7 +1041,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Plane_Civil_01_F {
-        vItemSpace = 700;
+        vItemSpace = 600;
         vFuelSpace = 50000;
         licenses[] = { {"pilot"}, {""}, {""}, {""} };
         price = 700000;
@@ -1049,7 +1049,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class C_Plane_Civil_racing_F {
-        vItemSpace = 700;
+        vItemSpace = 600;
         vFuelSpace = 50000;
         licenses[] = { {"pilot"}, {""}, {""}, {""} };
         price = 800000;

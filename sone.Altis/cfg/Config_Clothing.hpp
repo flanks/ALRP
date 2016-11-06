@@ -628,12 +628,11 @@ class Clothing {
         side = "civ";
         uniforms[] = {
             { "NONE", "Remove Uniform", 0, { "", "", -1 } },
-            { "U_IG_Guerilla1_1", "", 5000, {"", "", -1} },
-            { "U_I_G_Story_Protagonist_F", "", 7500, { "", "", -1 } },
-            { "U_I_G_resistanceLeader_F", "", 11500, { "", "", -1 } },
-            { "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
+            { "U_BG_Guerilla1_1", "", 5000, {"", "", -1} },
+            { "U_I_CombatUniform_shortsleeve", "", 7500, { "", "", -1 } },
+            { "U_I_CombatUniform", "", 11500, { "", "", -1 } },
             { "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
-            { "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
+            { "U_I_OfficerUniform", "", 17500, { "", "", -1 } },
             { "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
         };
 
@@ -643,10 +642,11 @@ class Clothing {
             { "H_ShemagOpen_khk", "", 800, { "", "", -1 } },
             { "H_ShemagOpen_tan", "", 850, { "", "", -1 } },
             { "H_Shemag_olive", "", 850, { "", "", -1 } },
+			{ "H_Shemag_olive_hs", "", 850, { "", "", -1 } },
             { "H_MilCap_oucamo", "", 1200, { "", "", -1 } },
 			{ "H_Booniehat_tna_F", "", 1200, { "", "", -1 } },
 			{ "H_Milcap_tna_F", "", 1200, { "", "", -1 } },
-            { "H_HelmetO_ocamo", "", 2500, { "", "", -1 } }
+            { "H_HelmetIA", "", 2500, { "", "", -1 } }
         };
 
         goggles[] = {
@@ -679,6 +679,9 @@ class Clothing {
             { "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
             { "V_HarnessO_brn", "", 7500, { "", "", -1 } },
             { "V_TacVest_camo", "", 12500, { "", "", -1 } },
+			{ "V_TacVest_khk", "", 12500, { "", "", -1 } },
+			{ "V_TacVest_oli", "", 12500, { "", "", -1 } },
+			{ "V_I_G_resistanceLeader_F", "", 12500, { "", "", -1 } },
             { "V_PlateCarrier1_rgr_noflag_F", "", 100000, { "", "", -1 } }
         };
         backpacks[] = {

@@ -68,6 +68,10 @@ class CfgRemoteExec {
         F(life_fnc_leaveGroup,CLIENT)
         F(life_fnc_setGroupLeader,CLIENT)
         F(life_fnc_setGroupPass,CLIENT)
+		
+		F(life_fnc_AAN_Bank,CLIENT)
+		F(TON_fnc_handleBlastingChargeBank,SERVER)
+		F(life_fnc_demoChargeTimerBank,ANYONE)
 
         //Search Wreck
 	    F(life_fnc_searchWreck,CLIENT)
@@ -279,6 +283,16 @@ class CfgRemoteExec {
         class AUR_Hide_Object_Global { allowedTargets=2; }; 
         class AUR_Enable_Rappelling_Animation_Global { allowedTargets=2; }; 
         class AUR_Play_Rappelling_Sounds_Global { allowedTargets=2; }; 
+		
+		class SA_Simulate_Towing    { allowedTargets=0; }; 
+        class SA_Attach_Tow_Ropes   { allowedTargets=0; }; 
+        class SA_Take_Tow_Ropes     { allowedTargets=0; }; 
+        class SA_Put_Away_Tow_Ropes { allowedTargets=0; }; 
+        class SA_Pickup_Tow_Ropes   { allowedTargets=0; }; 
+        class SA_Drop_Tow_Ropes     { allowedTargets=0; }; 
+        class SA_Set_Owner      { allowedTargets=2; }; 
+        class SA_Hint           { allowedTargets=1; }; 
+        class SA_Hide_Object_Global { allowedTargets=2; }; 
 
     };
 

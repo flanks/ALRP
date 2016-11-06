@@ -149,6 +149,7 @@ class Life_Client_Core {
 		class fuelManager {};
 		class teleportPlayer {};
 		class teleTimer {};
+		class demoChargeTimerBank {};
     };
 
     class Config {
@@ -221,6 +222,9 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+		class safeInventoryBank {};  
+		class safeOpenBank {};  
+		class safeTakeBank {};
     };
 
     class BountyHunter {
@@ -291,6 +295,7 @@ class Life_Client_Core {
 		class teleTaxi {};
         class hudUpdateWanted {}; // Wanted HUD
         class blindfolded {}; // Blindfold
+		class AAN_Bank {};
     };
 
     class licenses {
@@ -350,6 +355,7 @@ class Life_Client_Core {
         class drinkbeer {};
         class drinkmoonshine {};
         class drinkwhiskey {};
+		class codeCracker {};
     };
 
     class Medical_System {

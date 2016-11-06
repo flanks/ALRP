@@ -54,6 +54,7 @@ life_seatwarn = false;
 life_isRebooting = false;
 life_drink = 0;
 life_siren2_active = false;
+life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];

@@ -5,7 +5,7 @@
     Description:
     Deposits money into the players gang bank.
 */
-private["_value"];
+/*private["_value"];
 _value = parseNumber(ctrlText 2702);
 group player setVariable ["gbank_in_use_by",player,true];
 
@@ -39,3 +39,4 @@ if (LIFE_SETTINGS(getNumber,"player_moneyLog") isEqualTo 1) then {
     };
     publicVariableServer "money_log";
 };
+*/

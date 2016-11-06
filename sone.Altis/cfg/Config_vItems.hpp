@@ -61,7 +61,7 @@ class VirtualShops {
         side = "civ";
         license = "rebel";
         level[] = { "", "", -1, "" };
-        items[] = { "blindfold","zipties","tongs","spikeStrip", "waterBottle", "coconut", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "blindfold","zipties","tongs","spikeStrip", "waterBottle", "coconut", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge","codeCracker" };
     };
 
     class blackmarket {
@@ -77,7 +77,7 @@ class VirtualShops {
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
-        items[] = { "waterBottle", "coconut", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "coconut", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge","codeCracker" };
     };
 
     class wongs {
@@ -183,6 +183,14 @@ class VirtualShops {
         level[] = { "", "", -1, "" };
         items[] = { "coconut", "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator","gateopener" };
     };
+	
+	class counterfitCash {
+        name = "STR_Shops_CounterfitCash";
+        side = "civ";
+        license = "";
+        level[] = { "", "", -1, "" };
+        items[] = { "counterfitCash" };
+};
 };
 
 /*
@@ -393,7 +401,7 @@ class VirtualItems {
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
-        weight = 6;
+        weight = 4;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -404,7 +412,7 @@ class VirtualItems {
     class oil_processed {
         variable = "oilProcessed";
         displayName = "STR_Item_OilP";
-        weight = 6;
+        weight = 3;
         buyPrice = -1;
         sellPrice = 3200;
         illegal = false;
@@ -1099,6 +1107,28 @@ class VirtualItems {
         edible = 100;
         icon = "";
     };	
+	
+	class codeCracker {
+        variable = "codeCracker";
+        displayName = "STR_Item_codeCracker";
+        weight = 2;
+        buyPrice = 14000;
+        sellPrice = 5000;
+        illegal = true;
+        edible = -1;
+        icon = "icons\codeCracker.paa";
+};
+
+class counterfitCash {
+        variable = "counterfitCash";
+        displayName = "STR_Item_counterfitCash";
+        weight = 4;
+        buyPrice = -1;
+        sellPrice = 52500;
+        illegal = true;
+        edible = -1;
+        icon = "icons\counterfitCash.paa";
+};
 	
 	
 	

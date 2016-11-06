@@ -1,4 +1,4 @@
-#include "..\script_macros.hpp"
+#include "..\..\script_macros.hpp"
 /*
 ##################### DYNAMIC MARKET SCRIPT #####################
 ### AUTHOR: RYAN TT.                                          ###
@@ -34,7 +34,7 @@ _amountsold = 0;
 {
 	_name = _x select 0;
 	_sold = _x select 1;
-	if (_itemname isEqualTo  _name) then {
+	if (_itemname==_name) then {
 		_amountsold = _amountsold + _sold;
 	};
 } forEach DYNAMICMARKET_boughtItems;

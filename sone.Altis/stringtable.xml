@@ -124,6 +124,9 @@
          </Key>
      </Package>
     <Package name="Shop_Names">
+	<Key ID="STR_Shops_counterfitCash">
+            <Original>Counterfitter</Original>
+		</Key>
         <Key ID="STR_Shops_C_Bruce">
             <Original>Bruce's Outback Outfits</Original>
             <Czech>Bruceovy Outback Oblečení</Czech>
@@ -6343,6 +6346,12 @@
             <Portuguese>Carne de Cabra Grelhada</Portuguese>
             <Polish>Grilowana Koza</Polish>
         </Key>
+		<Key ID="STR_Item_counterfitCash">
+            <Original>Counterfit Cash</Original>
+		</Key>
+		<Key ID="STR_Item_codeCracker">
+					<Original>Code Cracker</Original>
+		</Key>
 		<Key ID="STR_Item_epipen">
             <Original>Epinephrine</Original>
         </Key>
@@ -9238,6 +9247,10 @@
         </Key>
     </Package>
     <Package name="Markers_names">
+		<Key ID="STR_MAR_counterfitCash">
+            <Original>Counterfit Guy</Original>
+        </Key>
+	
         <Key ID="STR_MAR_Fish_Market">
             <Original>Fish Market</Original>
             <Czech>Rybí trh</Czech>
