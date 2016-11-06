@@ -182,6 +182,7 @@ class CfgSounds {
 		sound[] = {"\sounds\fasttravel_3.ogg",0.5011872,1.0};
 		titles[] = {};
 	};
+	
 };
 
 class CfgDebriefing {

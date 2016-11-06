@@ -22,14 +22,14 @@ if (currentWeapon _robber == "") exitWith { hint "HaHa, you do not threaten me! 
 if (_kassa == 0) exitWith { hint "There is no cash in the register!" };
 
 _rip = true;
-_kassa = 120000 + round(random 60000);
+_kassa = 20000 + round(random 40000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
 _chance = random(100);
 if(_chance >= 50) then {[1,format["ALARM! - Gas Station: %1 is being robbed!", _shop]] remoteExec ["life_fnc_broadcast",west]; };
 
-_cops = (west countSide playableUnits);
-if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};
+ _cops = (west countSide playableUnits);
+ if(_cops < 1) exitWith{[_vault,-1] remoteExec ["disableSerialization;",2]; hint "There isnt enough Police to rob Gas Station!";};
 disableSerialization;
 13 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
