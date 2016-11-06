@@ -111,6 +111,7 @@ life_radio_emergencyservices = radioChannelCreate [[1,-1,-1, 0.5], "Emergency Se
 
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];
+fed_bank_1 setVariable ["safe",count playableUnits,true];
 [] spawn TON_fnc_federalUpdate;
 
 /* Event handler for disconnecting players */
