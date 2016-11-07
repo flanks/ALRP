@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={13849.635,90.964706,18443.748};
-		dir[]={0.4655937,-0.48137006,0.74264771};
-		up[]={0.25569582,0.87651372,0.4078486};
-		aside[]={0.84726846,-3.9275619e-008,-0.53118438};
+		pos[]={3599.6411,50.885452,13593.924};
+		dir[]={-0.20558603,-0.41294396,0.88725412};
+		up[]={-0.093214221,0.91075397,0.40228844};
+		aside[]={0.97419333,-1.8381252e-007,0.22573002};
 	};
 };
 binarizationWanted=0;
@@ -290,24 +290,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -322,6 +304,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -1503,7 +1503,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=177.24652;
 			id=130;
-			atlOffset=7.3980446;
+			atlOffset=7.259079;
 		};
 		class Item108
 		{
@@ -1515,7 +1515,7 @@ class Mission
 			colorName="ColorOrange";
 			angle=175.58072;
 			id=131;
-			atlOffset=43.265778;
+			atlOffset=39.505108;
 		};
 		class Item109
 		{
@@ -4200,6 +4200,7 @@ class Mission
 			};
 			id=551;
 			type="Land_Atm_02_F";
+			atlOffset=0.17056084;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13440,7 +13441,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={20809.248,29.015772,7207.6738};
-						angles[]={0,5.5320802,6.2818937};
+						angles[]={0,5.5320826,6.2818937};
 					};
 					side="Civilian";
 					flags=4;
@@ -13448,7 +13449,7 @@ class Mission
 					{
 						skill=0.60000002;
 						init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Drug_Dealer"",life_fnc_virt_menu,""drugdealer"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo civilian ']; this addAction[localize""STR_MAR_Question_Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide isEqualTo west && !life_action_inUse '];";
-						name="Dealer_3";
+						name="Dealer_1";
 					};
 					id=1003;
 					type="C_man_polo_6_F";
@@ -13492,7 +13493,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item47
@@ -13988,6 +14008,7 @@ class Mission
 						angles[]={0,0.012717915,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -13995,7 +14016,6 @@ class Mission
 					};
 					id=1012;
 					type="C_man_p_beggar_F";
-					atlOffset=0.34109688;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14288,7 +14308,6 @@ class Mission
 						angles[]={0,2.0762773,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -14297,7 +14316,7 @@ class Mission
 					};
 					id=1017;
 					type="B_RangeMaster_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=0.37889671;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21301,6 +21320,7 @@ class Mission
 						angles[]={0,5.4648876,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -21308,7 +21328,7 @@ class Mission
 					};
 					id=9950;
 					type="C_man_p_beggar_F";
-					atlOffset=0.51600003;
+					atlOffset=0.00033378601;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -85508,6 +85528,7 @@ class Mission
 				angles[]={0,2.3493485,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -85515,7 +85536,6 @@ class Mission
 			};
 			id=9948;
 			type="Land_CashDesk_F";
-			atlOffset=0.51426983;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -91187,7 +91207,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15413.342,4.3526258,15881.317};
-			angle=2.9974797;
+			angle=2.9974794;
 			class Attributes
 			{
 				condition="this && (vehicle player in thisList)";
@@ -91248,17 +91268,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9476.5615,120.66991,15891.89};
+				position[]={9476.5615,120.66982,15891.89};
 				angles[]={0,6.084218,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Open_Vault"",life_fnc_safeOpenBank,"""",0,false,false,"""",' playerSide isEqualTo civilian && {_target getVariable [""safe_open"",false]} ']; this addAction[localize""STR_MAR_Fix_Vault"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide isEqualTo west && {_target getVariable [""safe_open"",false]} ' ];";
+				name="fed_bank_2";
 			};
 			id=10185;
 			type="Land_CargoBox_V1_F";
+			atlOffset=1.1299973;
 		};
 		class Item2140
 		{
@@ -91553,8 +91574,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -91563,10 +91584,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -91610,8 +91631,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -91620,10 +91641,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
