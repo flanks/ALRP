@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14914.375,30.746935,17594.434};
-		dir[]={0.44496092,-0.6195876,0.64663666};
-		up[]={0.35122725,0.78492618,0.51041943};
-		aside[]={0.82381034,-5.4380507e-008,-0.56687731};
+		pos[]={13849.635,90.964706,18443.748};
+		dir[]={0.4655937,-0.48137006,0.74264771};
+		up[]={0.25569582,0.87651372,0.4078486};
+		aside[]={0.84726846,-3.9275619e-008,-0.53118438};
 	};
 };
 binarizationWanted=0;
@@ -290,6 +290,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -304,24 +322,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -4188,7 +4188,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16885.33,21.774281,12646.896};
+				position[]={16884.572,21.908419,12639.063};
 				angles[]={6.2674537,1.8589443,6.2621465};
 			};
 			side="Empty";
@@ -4200,7 +4200,6 @@ class Mission
 			};
 			id=551;
 			type="Land_Atm_02_F";
-			atlOffset=0.0011310577;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19837,7 +19836,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16861.803,23.059252,12658.752};
+						position[]={16862.418,22.938751,12658.683};
 						angles[]={6.2020273,1.8206054,6.0986342};
 					};
 					side="Civilian";
@@ -19849,7 +19848,6 @@ class Mission
 					};
 					id=5334;
 					type="C_man_p_beggar_F";
-					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -91189,7 +91187,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15413.342,4.3526258,15881.317};
-			angle=2.9974799;
+			angle=2.9974797;
 			class Attributes
 			{
 				condition="this && (vehicle player in thisList)";
@@ -91258,7 +91256,6 @@ class Mission
 			class Attributes
 			{
 				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Open_Vault"",life_fnc_safeOpenBank,"""",0,false,false,"""",' playerSide isEqualTo civilian && {_target getVariable [""safe_open"",false]} ']; this addAction[localize""STR_MAR_Fix_Vault"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide isEqualTo west && {_target getVariable [""safe_open"",false]} ' ];";
-				name="fed_bank_1";
 			};
 			id=10185;
 			type="Land_CargoBox_V1_F";
@@ -91556,8 +91553,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -91566,10 +91563,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="";
+									value=0;
 								};
 							};
 						};
@@ -91613,8 +91610,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -91623,10 +91620,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="";
 								};
 							};
 						};
@@ -91652,18 +91649,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14923.731,20.741579,0.975};
+						position[]={14923.333,19.749924,17604.793};
 						angles[]={0,3.5035565,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_counterfitCash"",life_fnc_virt_menu,""counterfitCash""];";
 					};
 					id=10205;
 					type="C_man_p_fugitive_F_euro";
-					atlOffset=1.1425552;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -91750,19 +91746,18 @@ class Mission
 			{
 			};
 			id=10204;
-			atlOffset=1.1425552;
 		};
 		class Item2158
 		{
 			dataType="Marker";
-			position[]={14922.698,0,17606.873};
+			position[]={14924.51,0,17603.633};
 			name="counterfit";
 			text="Counterfit cash exchange";
 			type="mil_triangle";
 			colorName="ColorCIV";
 			angle=116.775;
 			id=10206;
-			atlOffset=-19.634604;
+			atlOffset=-19.5403;
 		};
 	};
 	class Connections
