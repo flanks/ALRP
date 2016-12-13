@@ -1,0 +1,19 @@
+extDB2: Version: 71
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 4 Cores, Setting up 4 Worker Threads
+
+
+[18:10:02:276336 +02:00] [Thread 24360] extDB2: Database Type: MySQL
+[18:10:02:278321 +02:00] [Thread 24360] extDB2: Database Session Pool Started
+[18:10:02:278457 +02:00] [Thread 24360] extDB2: SQL_RAW_V2: Initialized: ADD_QUOTES True
+[18:26:14:199112 +02:00] [Thread 24360] extDB2: Stopping ...

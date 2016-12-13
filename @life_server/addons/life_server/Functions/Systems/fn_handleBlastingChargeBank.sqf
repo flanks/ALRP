@@ -5,7 +5,7 @@
     Information: Nothing really special, just handles the fed explosion over the server so if the client who place the charge logs out it still blows up.
 */
 private ["_bomb","_time"];
-_time = time + (3 * 60);
+_time = time + (8 * 60);
 waitUntil{(round(_time - time) < 1)};
 sleep 0.9;
 if (!(fed_bank_1 getVariable["chargeplaced",false])) exitWith {};

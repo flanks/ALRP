@@ -1,0 +1,21 @@
+extDB2: Version: 71
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 4 Cores, Setting up 4 Worker Threads
+
+
+[19:32:32:025815 +02:00] [Thread 3272] extDB2: Database Type: MySQL
+[19:32:32:032982 +02:00] [Thread 3272] extDB2: Database Session Pool Started
+[19:32:32:033139 +02:00] [Thread 3272] extDB2: SQL_RAW_V2: Initialized: ADD_QUOTES True
+[19:32:32:336135 +02:00] [Thread 2312] extDB2: SQL_RAW_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Table 'tanoalife.dynmarket' doesn't exist	[mysql_stmt_errno]: 1146	[mysql_stmt_sqlstate]: 42S02	[statemnt]: SELECT prices FROM dynmarket WHERE id='1'
+[19:32:32:336163 +02:00] [Thread 2312] extDB2: SQL_RAW_V2: Error StatementException: SQL: SELECT prices FROM dynmarket WHERE id='1'
+[19:35:04:412372 +02:00] [Thread 3272] extDB2: Stopping ...

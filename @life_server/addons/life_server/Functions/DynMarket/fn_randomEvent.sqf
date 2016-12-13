@@ -13,7 +13,8 @@ DYNMARKET_chance = 20; // Chance for a random event to happen
 DYNMARKET_Events =
 [
 	["An Oiltanker has sunken! The price went drasticaly down!",["oilp"],-1], // -1 MEANS CHANGE PRICE TO MAX, -2 TO MIN, OR A VALUE TO WHICH THE PRICE BE CHANGED TO
-	["The citizens seem to live healthier, fruites now have a high price!",["apple","peach"],100]
+	["The citizens seem to live healthier, fruites now have a high price!",["apple","peach"],100],
+	["The Americans require more cocaine the demand is higher",["cocaine_processed"],100]
 ];
 
 _random = floor(random 100)+1;

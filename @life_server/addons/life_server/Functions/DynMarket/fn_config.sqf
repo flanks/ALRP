@@ -14,7 +14,7 @@
 
 DYNMARKET_Serveruptime         = 06;   // Serveruptime after restart in hours
 DYNMARKET_UseExternalDatabase  = true; // Should the script use the External Database?
-DYNMARKET_PriceUpdateInterval  = 01;   // After how many minutes should the price be updated?
+DYNMARKET_PriceUpdateInterval  = 00.20;   // After how many minutes should the price be updated?
 DYNMARKET_CreateBackups        = true; // Should the server save write the prices regulary into the Database? If false, it will save the prices before Server-restart?
 DYNMARKET_CreateBackupInterval = 03;   // After how many updates (PriceUpdateIntervals) should the prices be saved into the Database?
 DYNMARKET_UserNotification     = false; // Should the user be informed with a hint whenever the prices got updated?
@@ -46,11 +46,13 @@ DYNMARKET_Items_Groups =
 	],
 	["Illegal", 
 		[
-			["heroin_processed",-1,4500,8000],
+			["heroin_processed",-1,4500,7500],
 			["marijuana",-1,3500,7500],
-			["cocaine_processed",-1,5500,13500],
-			["turtle_raw",-1,5000,10000],
-			["counterfitCash",-1,42500,52500]
+			["cocaine_processed",-1,5500,9000],
+			["turtle_raw",-1,5000,8000],
+			["counterfitCash",-1,42500,52500],
+			["tobacco_processed",-1,4000,5000],
+			["uranium_refined",-1,4000,9000]
 			
 			
 		],
@@ -58,9 +60,9 @@ DYNMARKET_Items_Groups =
 	],
 	["AntiqueIllegal", 
 		[
-			["ruby",-1,1500,5500],
-			["pearl",-1,5500,10000],
+		    ["pearl",-1,5500,10000],
 			["doubloon",-1,500,3200],
+			["ruby",-1,3500,5500],
 			["silverpiece",-1,250,2000],
 			["lockpick",-1,1000,1500]
 		],
@@ -73,7 +75,10 @@ DYNMARKET_Items_Groups =
 			["salt_refined",-1,1900,3800],
 			["glass",-1,2550,4000],
 			["cement",-1,1800,3000],
-			["diamond_cut",-1,2700,4700]
+			["ruby_refined",-1,3500,5500],
+			["oil_processed",-1,2800,5500],
+			["diamond_cut",-1,2700,4700],
+			["goldbar",-1,95000,150000]
 		],
 		0.5
 	],
@@ -116,13 +121,14 @@ DYNMARKET_Items_ToTrack        =
 	["bottledShine",1000],
 	["bottledWhiskey",1200],
 
-	["ruby",500],
-    ["pearl",500],
+	
+	["ruby",3500],
+    ["pearl",5500],
 	["doubloon",500],
 	["silverpiece",250],
 
-	["goldbar",150000],
-	
+	["goldbar",950000],
+	["ruby_refined",5000],
 	["oil_processed",1200],
 	["copper_refined",1700],
 	["iron_refined",1650],
@@ -138,8 +144,11 @@ DYNMARKET_Items_ToTrack        =
 	["turtle_raw",3000],
 	["heroin_processed",4900],
 	["marijuana",2500],
-	["cocaine_processed",10300],
-	["counterfitCash",46000]
+	["tobacco_processed",4000],
+	["cocaine_processed",7300],
+	["counterfitCash",46000],
+	["uranium_refined",5000]
+	
 ];
 
 //███████████████████████████████████████████████████████████████████████

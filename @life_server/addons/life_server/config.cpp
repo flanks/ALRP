@@ -85,6 +85,7 @@ class CfgFunctions {
             class vehicleUpdate {};
             class recupkeyforHC {};
 			class handleBlastingChargeBank {};
+			class insureCar {};
         };
 
         class Housing {
