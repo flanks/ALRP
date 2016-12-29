@@ -562,8 +562,25 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "Rebel", "reb", {
 				"textures\rebel\vehicles\EQT_REBhatch.jpg"
-			} }
-			
+			} },		
+			{ "KittyLila", "civ", {
+				"textures\civ\vehicles\kitty1.jpg"
+			} },
+			{ "Graffiti", "civ", {
+				"textures\civ\vehicles\done_grafii_right_one.jpg"
+			} },
+			{ "weed", "civ", {
+				"textures\civ\vehicles\drugHatchback.jpg"
+			} },
+			{ "flame", "civ", {
+				"textures\civ\vehicles\civ_flame.jpg"
+			} },			
+			{ "flame1", "civ", {
+				"textures\civ\vehicles\CIV_Hatchback_body_flames.jpg"
+			} },	
+	     	{ "marry", "civ", {
+				"textures\civ\vehicles\MERRY.jpg"
+			} }			
         };
     };
 
@@ -767,7 +784,20 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "sealdrop", "civ", {
                 "textures\civ\vehicles\suv_sealdrop.jpg"
+            } },
+			{ "drug", "civ", {
+                "textures\civ\vehicles\drugSUV.jpg"
+            } },
+			{ "Trump", "civ", {
+                "textures\civ\vehicles\TrumpSUV.jpg"
+            } },
+			{ "angel", "civ", {
+                "textures\civ\vehicles\angelSUV.jpg"
+            } },
+			{ "lavaDemonl", "civ", {
+                "textures\civ\vehicles\lavaDemon.jpg"
             } }
+
 			
 			
 			
@@ -995,6 +1025,18 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
 			{ "kitty", "civ", {
                 "textures\civ\vehicles\kitty_heli.jpg"
+            } },
+			{ "cookiei", "civ", {
+                "textures\civ\vehicles\C_Heli_Light_01_civil_F~cookie.jpg"
+            } },
+			{ "stickerbomb", "civ", {
+                "textures\civ\vehicles\C_Heli_Light_01_civil_F~stickerbomb.jpg"
+            } },
+			{ "swirl", "civ", {
+                "textures\civ\vehicles\C_Heli_Light_01_civil_F~swirl.jpg"
+            } },
+			{ "Hawai", "civ", {
+                "textures\civ\vehicles\C_Heli_Light_01_civil_F~Hawai.jpg"
             } }
 			
         };

@@ -68,7 +68,7 @@ class Licenses {
     class oil {
         variable = "oil";
         displayName = "STR_License_Oil";
-        price = 500000;
+        price = 50000;
         illegal = false;
         side = "civ";
     };
@@ -76,7 +76,7 @@ class Licenses {
     class diamond {
         variable = "diamond";
         displayName = "STR_License_Diamond";
-        price = 45000;
+        price = 55000;
         illegal = false;
         side = "civ";
     };

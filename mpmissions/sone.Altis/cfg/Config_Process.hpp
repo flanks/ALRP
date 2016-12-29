@@ -22,7 +22,7 @@ class ProcessAction {
         MaterialsGive[] = {{"oil_processed",1}};
         Text = "STR_Process_Oil";
         //ScrollText = "Process Oil";
-        NoLicenseCost = 10000;
+        NoLicenseCost = 1000;
     };
 
     class sugar {

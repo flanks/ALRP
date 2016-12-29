@@ -296,7 +296,7 @@ class VirtualItems {
         variable = "spikeStrip";
         displayName = "STR_Item_SpikeStrip";
         weight = 15;
-        buyPrice = 80000;
+        buyPrice = 20000;
         sellPrice = 1000;
         illegal = true;
         edible = -1;
@@ -418,7 +418,7 @@ class VirtualItems {
     class oil_unprocessed {
         variable = "oilUnprocessed";
         displayName = "STR_Item_OilU";
-        weight = 5;
+        weight = 6;
         buyPrice = -1;
         sellPrice = -1;
         illegal = false;
@@ -429,7 +429,7 @@ class VirtualItems {
     class oil_processed {
         variable = "oilProcessed";
         displayName = "STR_Item_OilP";
-        weight = 3;
+        weight = 4;
         buyPrice = -1;
         sellPrice = 3200;
         illegal = false;

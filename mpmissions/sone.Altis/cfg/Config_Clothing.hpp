@@ -421,6 +421,9 @@ class Clothing {
 
             // Rank 2
             { "U_B_CombatUniform_mcam_worn", "", 0, { "life_coplevel", "SCALAR", 2 } },
+			{ "U_B_GEN_Soldier_F", "", 0, { "life_coplevel", "SCALAR", 2 } },
+			{ "U_B_GEN_Commander_F", "", 0, { "life_coplevel", "SCALAR", 2 } },
+			{ "U_B_GhillieSuit", "", 0, { "life_coplevel", "SCALAR", 5 } },
             { "U_B_Wetsuit", "", 0,                { "life_coplevel", "SCALAR", 2 } }
 
         };
@@ -488,7 +491,9 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "",               2500, { "", "", -1 } },
             { "U_I_C_Soldier_Bandit_4_F", "",               2500, { "", "", -1 } },
             { "U_I_C_Soldier_Bandit_5_F", "",               2500, { "", "", -1 } },
-            { "U_B_CTRG_Soldier_urb_3_F", "",               25000, { "", "", -1 } },
+            { "U_B_CTRG_Soldier_urb_3_F", "",               15000, { "", "", -1 } },
+			{ "U_O_CombatUniform_ocamo", "",               15000, { "", "", -1 } },
+			{ "U_O_OfficerUniform_ocamo", "",               15000, { "", "", -1 } },
 			{ "U_I_C_Soldier_Para_1_F", "", 5000, {"", "", -1} },
 			{ "U_I_C_Soldier_Para_2_F", "", 5000, {"", "", -1} },
 			{ "U_I_C_Soldier_Para_3_F", "", 5000, {"", "", -1} },
@@ -499,6 +504,7 @@ class Clothing {
         headgear[] = {
             { "NONE",                   "Remove Hat",       0,   { "", "", -1 } },
             { "H_Shemag_khk",           "",                 2000, { "", "", -1 } },
+			{ "H_MilCap_ocamo",           "",                 2000, { "", "", -1 } },
             { "H_Helmet_Skate",         "",                 2500, { "", "", -1 } }              
         };
 
@@ -740,13 +746,17 @@ class Clothing {
             { "U_I_CombatUniform", "", 1150, { "", "", -1 } },
             { "U_O_PilotCoveralls", "", 1561, { "", "", -1 } },
             { "U_I_OfficerUniform", "", 1750, { "", "", -1 } },
+			{ "U_O_T_Soldier_F", "", 1750, { "", "", -1 } },
+			{ "U_O_T_Officer_F", "", 1750, { "", "", -1 } },
+			{ "U_O_V_Soldier_Viper_F", "", 1750, { "", "", -1 } },
             { "U_BG_Guerrilla_6_1", "", 1750, { "", "", -1 } },
-            { "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
+            { "U_I_GhillieSuit", "", 50000, { "", "", -1 } }
         };
 
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } },
             { "H_Bandanna_camo", "", 650, { "", "", -1 } },
+			{ "H_MilCap_ghex_F", "", 650, { "", "", -1 } },
             { "H_ShemagOpen_khk", "", 800, { "", "", -1 } },
             { "H_ShemagOpen_tan", "", 850, { "", "", -1 } },
             { "H_Shemag_olive", "", 850, { "", "", -1 } },

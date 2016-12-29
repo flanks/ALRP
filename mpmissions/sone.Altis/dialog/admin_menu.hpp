@@ -26,16 +26,16 @@ class life_admin_menu {
         };
     };
 
-    class controls {
-        class RscButtonMenu_2400: Life_RscButtonMenu {
-            idc = -1;
-            text = "Call Restart";
-            onButtonClick = "[] call life_fnc_restart; closeDialog 0;";
-            x = 0.324687 * safezoneW + safezoneX;
-            y = 0.643 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
+     class controls {
+        // class RscButtonMenu_2400: Life_RscButtonMenu {
+            // idc = -1;
+            // text = "Call Restart";
+            // onButtonClick = "[] call life_fnc_restart; closeDialog 0;";
+            // x = 0.324687 * safezoneW + safezoneX;
+            // y = 0.643 * safezoneH + safezoneY;
+            // w = 0.061875 * safezoneW;
+            // h = 0.022 * safezoneH;
+        // };
 
         class RscButtonMenu_2402: Life_RscButtonMenu {
             idc = -1;
@@ -107,15 +107,15 @@ class life_admin_menu {
             h = 0.022 * safezoneH;
         };
 
-        class RscButtonMenu_2408: Life_RscButtonMenu {
-            idc = 2910;
-            text = "$STR_Admin_Markers";
-            onButtonClick = "[] spawn life_fnc_adminMarkers; closeDialog 0;";
-            x = 0.54125 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };
+        // class RscButtonMenu_2408: Life_RscButtonMenu {
+            // idc = 2910;
+            // text = "$STR_Admin_Markers";
+            // onButtonClick = "[] spawn life_fnc_adminMarkers; closeDialog 0;";
+            // x = 0.54125 * safezoneW + safezoneX;
+            // y = 0.676 * safezoneH + safezoneY;
+            // w = 0.061875 * safezoneW;
+            // h = 0.022 * safezoneH;
+        // };
 
         class RscButtonMenu_2409: Life_RscButtonMenu {
             idc = 2911;
